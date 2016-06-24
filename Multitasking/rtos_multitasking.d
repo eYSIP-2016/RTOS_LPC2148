@@ -1,0 +1,16 @@
+rtos_multitasking.o: rtos_multitasking.c
+rtos_multitasking.o: C:\Keil\ARM\RV31\INC\stdlib.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h
+rtos_multitasking.o: C:\Keil\ARM\RV31\INC\stddef.h
+rtos_multitasking.o: C:\Keil\ARM\RV31\INC\stdint.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h
+rtos_multitasking.o: C:\Keil\ARM\INC\Philips\lpc21xx.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h
+rtos_multitasking.o: C:\Users\G50\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h
+rtos_multitasking.o: lcd.h
+rtos_multitasking.o: C:\Keil\ARM\INC\Philips\lpc214x.h
