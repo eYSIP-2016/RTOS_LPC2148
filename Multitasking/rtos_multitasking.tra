@@ -1,0 +1,27 @@
+*** Creating Trace Output File 'rtos_multitasking.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"rtos_multitasking.o"'
+### List of Objects: adding '"list.o"'
+### List of Objects: adding '"queue.o"'
+### List of Objects: adding '"tasks.o"'
+### List of Objects: adding '"port.o"'
+### List of Objects: adding '".\portasm.o"'
+### List of Objects: adding '"heap_2.o"'
+### List of Objects: adding '".\startup.o"'
+### List of Objects: adding '"lcd.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "rtos_multitasking.o" "list.o" "queue.o" "tasks.o" "port.o" ".\portasm.o" "heap_2.o" ".\startup.o" "lcd.o" --strict --scatter "rtos_multitasking.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\rtos_multitasking.map" -o "rtos_multitasking.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'rtos_multitasking.axf'
+### ADS-LD Command File: 'rtos_multitasking.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'rtos_multitasking.lnp', Handle=0x00000370
+### Writing '.lnp' file
+### ADS-LD Command file 'rtos_multitasking.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
