@@ -18,7 +18,7 @@
 ### ADS-LD Output File: 'Counting.axf'
 ### ADS-LD Command File: 'Counting.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'Counting.lnp', Handle=0x0000045C
+### Creating CmdFile 'Counting.lnp', Handle=0x00000470
 ### Writing '.lnp' file
 ### ADS-LD Command file 'Counting.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -86,25 +86,26 @@ Note: To use mutex semaphore you need to initialize  configUSE_MUTEXES to 1
 #include "LCD.h"
 #include"semphr.h"
 
-SemaphoreHandle_t xSemaphore=0,xMutex=0;//Creation of Variable for semaphore
+SemaphoreHandle_t xSemaphore=0;//Creation of Variable for semaphore
 
 unsigned char Temp=0;
 int s=0; 
-int forks_avail[5]={0,0,0,0,0}; 
+int forks_avail[5]={0,0,0,0,0}; //The value of Variable is 0 if a fork is available at that location and 1 if the fork is taken
+
+
+//UART0 declarations for serial communication
 #define Fosc            12000000                    //10MHz~25MHz
 #define Fcclk           (Fosc * 5)                  //Fosc(1~32)<=60MHZ
 #define Fcco            (Fcclk * 4)                 //CCO Fcclk 2񅦰�16�156MHz~320MHz
 #define Fpclk           (Fcclk / 4) * 1             //VPB(Fcclk / 4) 1񄿔
 #define  UART_BPS	9600 		//Change Baud Rate Setting here
 #define CR     0x0D
-//int i=0,j=0;
+
+
 void DelaymSec(unsigned int j);
-
-
 void Init_Peripherals(void);
 void Init_Ports(void);
 void  __irq IRQ_UART0(void);
-
 void Init_UART0(void);
 void UART0_SendByte(unsigned char data);	//For sending a byte of Data through serial monitor
 void UART0_SendStr(const unsigned char *str);//For sending a string of Data through serial monitor
@@ -119,14 +120,7 @@ void  __irq IRQ_UART0(void)
  UART0_SendByte(Temp);	//Echo Back received character
 }		
 
-
-/************************************************************
-
-	Function 		: Init_UART0
-	Return type		: None
-	Parameters		: None
-	Description 	: Initialises UART0 module. 
-************************************************************/
+// Initialises UART0 module. 
 void Init_UART0(void)
 {  
    unsigned int Baud16;
@@ -153,7 +147,7 @@ void Init_UART0(void)
 void UART0_SendByte(unsigned char data)
 {  	
    U0THR = data;				    
-   while( (U0LSR&0x40)==0 );	    
+   while( (U0LSR&0x40)==0 );//Ensures that no data is left to be sent	    
 }
 
 //This function sends a string of characters on the serial port
@@ -167,8 +161,9 @@ void UART0_SendStr(const unsigned char *str)
 }
 
 void Init_Ports(void)
-{Init_LCD_Pin();
- }
+{
+//Only simulation in this program
+}
 
 void Init_Peripherals(void)
 {
@@ -185,11 +180,14 @@ void DelaymSec(unsigned int j)		  //App 1mSec delay
  } 
 }
 
-	void vfork( void * pvParameters )
-			{	 int i;
-			const unsigned char* str;
+void vfork( void * pvParameters )
+			{	 
+			int i; 											//For ith Fork
+			const unsigned char* str;						//Pointer for the passed Parameter
 			str = ( const unsigned char * ) pvParameters; 
 				 
+				
+				//Assignment of forks available on the basis of name of Philospher
 				if(str[1]=='1')
 				{i=0;}
 				if(str[1]=='2')
@@ -202,16 +200,20 @@ void DelaymSec(unsigned int j)		  //App 1mSec delay
 				{i=4;}
 				 
 				while(1)
-				{  if(( xSemaphoreTake( xSemaphore, 1000 ) == pdTRUE )&&(forks_avail[i]==0))
-				  	{
+				{  
+				//Waits for 1000 ticks for forks to be avaliable
+				//If available checks if the fork is adjacent(Right) or not
+				if(( xSemaphoreTake( xSemaphore, 1000 ) == pdTRUE )&&(forks_avail[i]==0))		  	{
 					forks_avail[i]=1;
-					while( (U0LSR&0x40)==0 );
+					
+				while( (U0LSR&0x40)==0 );
 				UART0_SendStr(&str[0]);	
+				
 				while( (U0LSR&0x40)==0 );
 				UART0_SendStr(":Right fork obtained,Waiting for Left fork\n");
 					 	
 						if(( xSemaphoreTake( xSemaphore, 2000 ) == pdTRUE )&&(forks_avail[(i+1)%5]==0))
-				  				   {
+				  				   { //Waits for 2000 ticcks for Left fork to be available
 								   
 				  						 	forks_avail[(i+1)%5]=1;
 											
@@ -277,14 +279,14 @@ void DelaymSec(unsigned int j)		  //App 1mSec delay
  PINSEL0 = 0x00000000;		// Reset all pins as GPIO
  PINSEL1 = 0x00000000;
  PINSEL2 = 0x00000000;
- DelaymSec(40);
- 	Init_Peripherals();
+ Init_Peripherals();
 	
 	
 	 
 	UART0_SendStr("\t\tCounting Semaphore\n");
+
 	xSemaphore = xSemaphoreCreateCounting( 5, 5 );	//Use the Handle as a counting semaphore	  
-	xMutex = xSemaphoreCreateMutex();
+	
 	  
 	 if( xSemaphore != NULL )
     {	UART0_SendStr("\tSemaphore Created\n");
@@ -301,8 +303,10 @@ void DelaymSec(unsigned int j)		  //App 1mSec delay
 		vTaskStartScheduler();  //Task Scheduling   					    
      }
 		
-	while(1)
-	{UART0_SendStr("\t\tSemaphore not Created\n");}
+	while(1)//Never reaches this Part of the main
+	{
+	UART0_SendStr("\t\tSemaphore not Created\n");
+	}
 
 }
 
