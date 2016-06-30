@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {subsection}{\numberline {1.1}Binary Semaphores}{3}
+\contentsline {subsection}{\numberline {1.2}Mutex}{3}
+\contentsline {subsection}{\numberline {1.3}Counting Semaphore}{3}
+\contentsline {subsection}{\numberline {1.4}Mutex vs Binary Semaphore}{4}
+\contentsline {section}{\numberline {2}Requirement}{4}
+\contentsline {section}{\numberline {3}Binary Semaphore}{5}
+\contentsline {subsection}{\numberline {3.1}Code : }{5}
+\contentsline {subsection}{\numberline {3.2}Explanation}{7}
+\contentsline {section}{\numberline {4}Mutex}{8}
+\contentsline {subsection}{\numberline {4.1}Code : }{8}
+\contentsline {subsection}{\numberline {4.2}Explanation}{10}
+\contentsline {section}{\numberline {5}Counting Semaphore Implemented by dining Philosophers Problem}{11}
+\contentsline {subsection}{\numberline {5.1}Code : }{11}
+\contentsline {subsection}{\numberline {5.2}Explanation}{14}
+\contentsline {section}{\numberline {6}References}{16}

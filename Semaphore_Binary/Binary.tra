@@ -18,7 +18,7 @@
 ### ADS-LD Output File: 'Binary.axf'
 ### ADS-LD Command File: 'Binary.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'Binary.lnp', Handle=0x00000A74
+### Creating CmdFile 'Binary.lnp', Handle=0x000004D0
 ### Writing '.lnp' file
 ### ADS-LD Command file 'Binary.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

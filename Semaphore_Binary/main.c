@@ -1,11 +1,79 @@
 /*
-PIN 1 
-26 RTCK	 pin 11 center port
-27 TDO	 pin 13 center port
-28	TDI pin 3 servo pod
-29,30
-PIN 0
+
+Replaced contenets in lpc21xx with that of lpc214x to remove warnings 
+Include startup.s from experiments in case of data abort
 */
+
+/************************************************************************ 
+Written by: K V S SUMAKAR and KARTIKEYAN V, ERTS Lab, IIT Bombay. Date: 23 June 2016
+ IDE: Keil uVision4
+
+
+Problem: To synchronise two Tasks by using Binary Semaphore
+		
+		 Two Tasks of Forward and Backward motion can be synchronised to use resources bby using another function,
+		 The function control_switcher periodically switches between two tasks.
+		 This way unlike Mutexes the processor/resources(Motors in this case) wouldn't remain unusedif one task finishes before other task
+		 starts waiting for the processor/resources	   
+
+Concepts covered:	
+Binary semaphores definition, creation and usage.
+
+
+ Note:
+ 
+ 1. Do don't use the default Startup.s	provided by Keil. 
+ 	Instead follow the procedure given below :
+	a. Copy the Startup.S file from any example project into the folder containing the project.
+	b. Right click on the group icon in the project window and click on 'Add files to Group <group name>'
+	c. Select and add the Startup.s file which was previously added.
+
+ 2. Make sure that in the Target options following settings are 
+ 	done for proper operation of the code
+
+ 	Device -> Microcontroller	: LPC2148
+ 	Target -> Frequency			: 12 Mhz
+ 	Output -> Create Hex File	: Checked (For more information read section 4.3.1 "Setting up Project in Keil uVision" in the hardware manual)
+	C/C++  -> Include paths 	: ..\..\Source\include;..\..\Source\portable\RVDS\ARM7_LPC21xx;..\<project-folder-name>
+	ASM    -> Include paths 	: ..\..\Source\portable\RVDS\ARM7_LPC21xx
+
+
+ 3. Ensure that following settings are done in Startup.s configuration wizard:
+
+ 	Clock Settings:
+		
+	PLL Steup	 >>	 MSEL=5, PSEL=2
+	VPBDIV Setup >>  VPBCLK = CPU Clock
+	
+ 4. Include the following FreeRTOS C files in the project either in the same group, or by creating a new group in the project.
+	
+	 ( These will be available in the FreeRTOS source files. )
+	
+	FILE		SOURCE (may change according to location of FreeRTOS source code)
+	list.c	 	FreeRTOSv8.0.1\FreeRTOS\Source\list.c
+	queue.c		FreeRTOSv8.0.1\FreeRTOS\Source\queue.c
+	tasks.c		FreeRTOSv8.0.1\FreeRTOS\Source\tasks.c
+	heap_2.c	FreeRTOSv8.0.1\FreeRTOS\Source\portable\MemMang\heap_2.c
+	port.c		FreeRTOSv8.0.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\port.c
+	portASM.s	FreeRTOSv8.0.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portASM.s
+	
+ 5. Copy FreeRTOSConfig.h file into	the project folder. Configure it according to the application. 
+ 	use this link for reference : http://www.freertos.org/a00110.html
+ 
+
+	For more details refer section 4.8 in the hardware manual.
+
+
+
+
+Declaration of BinarySemaphore 
+	xSemaphore=xSemaphoreCreateBinary( );
+	
+	
+	xSemaphore : Shows if resource is available or not
+*/
+//****************************************************************************************************/
+
 #include<stdlib.h>
 #include"FreeRTOS.h"
 #include"task.h"
@@ -16,7 +84,7 @@ SemaphoreHandle_t xSemaphore;
 unsigned char Temp=0;
 unsigned int T;
 
- unsigned char a[3];
+ 
 #define BIT(x) (1<<x)
 
 
@@ -51,15 +119,7 @@ void Init_UART0(void);
 void UART0_SendByte(unsigned char data);	//For sending a byte of Data through serial monitor
 void UART0_SendStr(const unsigned char *str);//For sending a string of Data through serial monitor
 
-void Init_ADC_Pin(void);
-void Init_ADC0(void);
-void Init_ADC1(void);
-unsigned int AD0_Conversion(unsigned char channel);
-unsigned int AD1_Conversion(unsigned char channel);
-unsigned int Sharp_GP2D12_Estimation(unsigned int Val);
-unsigned int Batt_Voltage_Conversion(unsigned int Val);
 
-void send ( int n);
 //This function is UART0 Receive ISR. This functions is called whenever UART0 receives any data
 void  __irq IRQ_UART0(void)
 {  
@@ -69,14 +129,7 @@ void  __irq IRQ_UART0(void)
  UART0_SendByte(Temp);	//Echo Back received character
 }		
 
-
-/************************************************************
-
-	Function 		: Init_UART0
-	Return type		: None
-	Parameters		: None
-	Description 	: Initialises UART0 module. 
-************************************************************/
+//Initialises UART0 module. 
 void Init_UART0(void)
 {  
    unsigned int Baud16;
@@ -123,6 +176,15 @@ void DelaymSec(unsigned int j)		//Generates milli second delay
   for(i=0; i<10000; i++);
  } 
 }
+/*
+
+PIN 1 
+26 RTCK	 pin 11 center port
+27 TDO	 pin 13 center port
+28	TDI pin 3 servo pod
+29,30
+PIN 0
+
 void Led_init_P1(int x)
 {
    IO1DIR|=BIT(x);
@@ -142,7 +204,7 @@ void Led_init()
 	Led_init_P1(27);
 	Led_init_P1(28);
 }
-
+*/
 void Init_Motion_Pin(void)
 {
  PINSEL0&=0xFF0F3FFF;		
@@ -155,109 +217,6 @@ void Init_Motion_Pin(void)
  IO1DIR|= (1<<21);		// Set P1.21 as output pin
  Stop();				// Stop both the motors on start up
  IO0SET = 0x00200080;	// Set PWM pins P0.7/PWM2 and P0.21/PWM5 to logic 1
-}
- void Init_ADC_Pin(void)
-{
- PINSEL0&= 0xF0FFC0FF;
- PINSEL0|= 0x0F003F00;		//Set pins P0.4, P0.5, P0.6, P0.12, P0.13 as ADC pins
- PINSEL1&= 0xF0FFFFFF;		
- PINSEL1|= 0x05000000;	    //Set pins P0.28, P0.29 as ADC pins
-}
-
-/************************************************************
-
-	Function 		: ADC0_Init
-	Return type		: None
-	Parameters		: None
-	Description 	: This fuction initialises ADC 0
-					  module of LPC2148 microcontroller. It also 
-					  configures the required I/o pins to be used as 
-					  ADC pins. 
-************************************************************/
-void Init_ADC0(void)
-{
- AD0CR=0x00200E00;	// SEL = 1 	ADC0 channel 1	Channel 1
-					// CLKDIV = Fpclk / 1000000 - 1 ;1MHz
-					// BURST = 0 
-					// CLKS = 0 
- 					// PDN = 1 
- 					// START = 1
-  					// EDGE = 0 (CAP/MAT)
-} 
-
-
-/************************************************************
-
-	Function 		: ADC1_Init
-	Return type		: None
-	Parameters		: None
-	Description 	: This fuction initialises ADC 1
-					  module of LPC2148 microcontroller. It also 
-					  configures the required I/o pins to be used as 
-					  ADC pins. 
-************************************************************/
-void Init_ADC1(void)
-{
- AD1CR=0x00200E00;	// SEL = 1 	ADC0 channel 1	Channel 1
-					// CLKDIV = Fpclk / 1000000 - 1 ;1MHz
-					// BURST = 0 
-					// CLKS = 0 
- 					// PDN = 1 
- 					// START = 1
-  					// EDGE = 0 (CAP/MAT)
-} 
-                           
-
-//This function converts ADC0 channels. Channel number is passed to this function as integer.
-unsigned int AD0_Conversion(unsigned char channel)
-{
- unsigned int Temp;
- if(channel!=0)
- {
-  AD0CR = (AD0CR & 0xFFFFFF00) | (1<<channel);
- }
- else
- {
-  AD0CR = (AD0CR & 0xFFFFFF00) | 0x01;
- }
- AD0CR|=(1 << 24);
- while((AD0GDR&0x80000000)==0);
- Temp = AD0GDR;						
- Temp = (Temp>>8) & 0xFF;
- return Temp;
-}
-
-//This function converts ADC1 channels. Channel number is passed to this function as integer.
-unsigned int AD1_Conversion(unsigned char channel)
-{
- unsigned int Temp;
- if(channel!=0)
- {
-  AD1CR = (AD1CR & 0xFFFFFF00) | (1<<channel);
- }
- else
- {
-  AD1CR = (AD1CR & 0xFFFFFF00) | 0x01;
- }
- AD1CR|=(1 << 24);
- while((AD1GDR&0x80000000)==0);
- Temp = AD1GDR;						
- Temp = (Temp>>8) & 0xFF;
- return Temp;
-}
-
-//This Function estimates the raw digital data of Sharp sensor in mm
-unsigned int Sharp_GP2D12_Estimation(unsigned int Val)
-{
- float Distance;
- unsigned int DistanceInt;
- Distance = (int)(10.00*(2799.6*(1.00/(pow(Val,1.1546)))));
- DistanceInt = (int)Distance;
- if(DistanceInt>800)
- {
-  DistanceInt=800;
- }
- return DistanceInt;
 }
 
 void L_Forward(void)
@@ -338,26 +297,26 @@ void Stop(void)
 }
 void Init_Ports()
 { 	Init_Motion_Pin();
-	Led_init();
+//	Led_init();
 	Init_UART0();
-	Init_ADC_Pin();
+	
 }
 void Init_Peripherals(void)
 {
  Init_Ports();
  Init_UART0();
- Init_ADC0();
- Init_ADC1();
+ 
 }
 
 void forward(void *pvparam)
-{
+{	 vTaskDelay(5);	//Added so that Back Task can occupy the resource first
 	while(1)
 	{
 	 if(xSemaphoreTake(xSemaphore,portMAX_DELAY)==pdTRUE)
 	 	{	Stop(); 
 			Forward();
-		  UART0_SendStr("Frwd\n");
+		  UART0_SendStr("Forward\n");
+		vTaskDelay(5);//To avoid same Tasking Taking resources twice
 		}
 
 	
@@ -365,50 +324,35 @@ void forward(void *pvparam)
 }							  
 
 void back(void *pvparam)
-{	 vTaskDelay(10);
+{	 //xSemaphoreGive(xSemaphore);
 	while(1)
 	{
 	 if(xSemaphoreTake(xSemaphore,portMAX_DELAY)==pdTRUE)
 	 	{	Stop();
 			Back();
 		 UART0_SendStr("Back\n");
+		vTaskDelay(5);
 		}
 
 	}
 }							  
-
+/*
+Synchronices The Tasks by "Giving" the semaphore periodically 
+therefore no one Task occupies the resources for long time and 
+at the same time doesn't have to release the resources simultaneously
+*/
 void control_switcher(void *pvparam)
-{  //xSemaphoreGive(xSemaphore);
-   
+{     
   while(1)
-  {
+  {xSemaphoreGive(xSemaphore);
+   UART0_SendStr("Semaphore given\n");
    vTaskDelay(1200);
-   xSemaphoreGive(xSemaphore);
    
    
    }
 }
 
-//Function to convert t Numbers (Integers) to string and then send the string.
-void send ( int n)
-{
-	int z = 0;
-	int c = n;
-	a[0] = 0;
-	a[1] = 0;
-	a[2] = 0;
-	while (c)// loop till there's nothing left
-	{ 								
-		a[z++] = (char)(c % 10); // assign the last digit
-		c /= 10; // "right shift" the number
-	}
-	
-	UART0_SendByte(a[2] + 48);
-	UART0_SendByte(a[1] + 48);
-	UART0_SendByte(a[0] + 48);
-	UART0_SendByte('\n');
-	
-}
+
   int main()
 {	
  PINSEL0 = 0x00000000;		// Reset all pins as GPIO
@@ -417,9 +361,6 @@ void send ( int n)
  DelaymSec(40);
  	Init_Peripherals();
 	 
-
-
-
 	UART0_SendStr("\t\tBinary Semaphore\n");
     xSemaphore=xSemaphoreCreateBinary( );
 		

@@ -18,7 +18,7 @@
 ### ADS-LD Output File: 'Mutex.axf'
 ### ADS-LD Command File: 'Mutex.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'Mutex.lnp', Handle=0x00000BE4
+### Creating CmdFile 'Mutex.lnp', Handle=0x00000484
 ### Writing '.lnp' file
 ### ADS-LD Command file 'Mutex.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

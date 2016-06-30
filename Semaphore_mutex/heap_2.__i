@@ -1,0 +1,1 @@
+-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IS:\FreeRTOSv9.0.0\FreeRTOS\Source\include -IS:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I. -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" -DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o "heap_2.o" --omf_browse "heap_2.crf" --depend "heap_2.d" "S:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\MemMang\heap_2.c"

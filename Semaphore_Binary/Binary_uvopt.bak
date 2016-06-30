@@ -195,8 +195,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>259</TopLine>
+      <CurrentLine>259</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>S:\FreeRTOSv9.0.0\FreeRTOS\Source\queue.c</PathWithFileName>
       <FilenameWithoutPath>queue.c</FilenameWithoutPath>
@@ -219,7 +219,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -291,10 +291,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>5</ColumnNumber>
+      <ColumnNumber>111</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>233</TopLine>
-      <CurrentLine>251</CurrentLine>
+      <TopLine>358</TopLine>
+      <CurrentLine>361</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -342,32 +342,6 @@
       <FilenameWithoutPath>semphr.h</FilenameWithoutPath>
     </File>
   </Group>
-
-  <AlienFiles>
-    <PathWithFilename>S:\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h</PathWithFilename>
-    <TopLine>1</TopLine>
-    <CurrentLine>1</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
 
   <WinLayout>
     <sActiveDebugView>Default</sActiveDebugView>
@@ -1714,15 +1688,9 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>5</ColumnNumber>
-          <TopLine>233</TopLine>
-          <CurrentLine>251</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>S:\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
+          <ColumnNumber>111</ColumnNumber>
+          <TopLine>358</TopLine>
+          <CurrentLine>361</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

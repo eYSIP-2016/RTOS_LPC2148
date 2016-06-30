@@ -152,7 +152,7 @@ void UART0_SendByte(unsigned char data)
 
 //This function sends a string of characters on the serial port
 void UART0_SendStr(const unsigned char *str)
-{  while( (U0LSR&0x40)==0 );	
+{  	while( (U0LSR&0x40)==0 );
    while(1)
    {  
       if( *str == '\0' ) break;
@@ -210,7 +210,7 @@ void vfork( void * pvParameters )
 				UART0_SendStr(&str[0]);	
 				
 				while( (U0LSR&0x40)==0 );
-				UART0_SendStr(":Right fork obtained,Waiting for Left fork\n");
+				UART0_SendStr(":Right fork obtained\n");
 					 	
 						if(( xSemaphoreTake( xSemaphore, 2000 ) == pdTRUE )&&(forks_avail[(i+1)%5]==0))
 				  				   { //Waits for 2000 ticcks for Left fork to be available
@@ -230,7 +230,7 @@ void vfork( void * pvParameters )
 											
 											while( (U0LSR&0x40)==0 );
 											UART0_SendStr(":Ate \n");
-									   		
+									   		while( (U0LSR&0x40)==0 );
 											xSemaphoreGive(xSemaphore);
 									 		xSemaphoreGive(xSemaphore);
 											forks_avail[i]=0;	 
@@ -242,11 +242,10 @@ void vfork( void * pvParameters )
 											while( (U0LSR&0x40)==0 );
 											UART0_SendStr(":Thinking \n");
 											vTaskDelay(3000);
-
-									}
+																				}
 
 						else
-								{
+								{ 
 								while( (U0LSR&0x40)==0 ); 
 								UART0_SendStr(&str[0]);
 								
@@ -265,8 +264,8 @@ void vfork( void * pvParameters )
 				   UART0_SendStr(&str[0]);
 				   
 				   while( (U0LSR&0x40)==0 );
-				   UART0_SendStr(":Hungry and Thinking \n");
-				   
+				   UART0_SendStr(":Hungry\n");
+				   while( (U0LSR&0x40)==0 );
 				   vTaskDelay(3000);
 					}
 				}

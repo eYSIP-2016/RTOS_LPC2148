@@ -69,6 +69,7 @@ Mutex semaphores definition, creation and usage.
 
 
 Declaration of Mutex 
+xSemaphore = xSemaphoreCreateMutex();	//Use the Handle as a MUTEX	  
 xSemaphoreTake( SemaphoreHandle_t xSemaphore,TickType_t xTicksToWait );
 
 	xTicksToWait:Is the time for which the function will wait for resource to be available.
@@ -370,4 +371,3 @@ void back(void *pvparam)
 	
 	while(1);
 }
-
