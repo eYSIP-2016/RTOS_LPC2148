@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "main.o" "startup.o" "tasks.o" "queue.o" "list.o" ".\portasm.o" "port.o" "heap_2.o" --strict --scatter "MailBox.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\MailBox.map" -o "MailBox.axf"
