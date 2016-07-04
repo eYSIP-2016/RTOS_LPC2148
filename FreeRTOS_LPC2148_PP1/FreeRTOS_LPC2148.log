@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.24)  4 JUL 2016 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.24)  4 JUL 2016 13:49
 entering extended mode
 **./FreeRTOS_LPC2148.tex
 (FreeRTOS_LPC2148.tex
@@ -1059,7 +1059,7 @@ Underfull \hbox (badness 2103) in paragraph at lines 50--50
 
 ] [4
 
-] <Binarymutex.png, id=181, 226.59656pt x 221.32687pt>
+] <Binarymutex.png, id=175, 226.59656pt x 221.32687pt>
 File: Binarymutex.png Graphic file (type png)
 
 <use Binarymutex.png>
@@ -1068,7 +1068,7 @@ Package pdftex.def Info: Binarymutex.png used on input line 74.
  [5
 
  <./Binarymutex.png>]
-<Dinning.png, id=219, 199.49532pt x 268.75406pt>
+<Dinning.png, id=211, 199.49532pt x 268.75406pt>
 File: Dinning.png Graphic file (type png)
  <use Dinning.png>
 Package pdftex.def Info: Dinning.png used on input line 78.
@@ -1079,7 +1079,7 @@ Overfull \vbox (45.60678pt too high) detected at line 78
 
 [6
 
- <./Dinning.png>] <mbox.png, id=255, 236.38312pt x 208.52907pt>
+ <./Dinning.png>] <mbox.png, id=246, 236.38312pt x 208.52907pt>
 File: mbox.png Graphic file (type png)
 
 <use mbox.png>
@@ -1087,14 +1087,14 @@ Package pdftex.def Info: mbox.png used on input line 81.
 (pdftex.def)             Requested size: 236.38254pt x 208.52855pt.
  [7
 
- <./mbox.png>] <queue.png, id=291, 177.66376pt x 270.25969pt>
+ <./mbox.png>] <queue.png, id=281, 149.05687pt x 330.48468pt>
 File: queue.png Graphic file (type png)
 
 <use queue.png>
 Package pdftex.def Info: queue.png used on input line 85.
-(pdftex.def)             Requested size: 177.66331pt x 270.25902pt.
+(pdftex.def)             Requested size: 149.0565pt x 330.48387pt.
 
-Overfull \vbox (47.1124pt too high) detected at line 85
+Overfull \vbox (107.33725pt too high) detected at line 85
  []
 
 [8
@@ -1122,15 +1122,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
  (FreeRTOS_LPC2148.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
+Package rerunfilecheck Info: File `FreeRTOS_LPC2148.out' has not changed.
+(rerunfilecheck)             Checksum: 0E01DDC64ECEB42096E67F050E6B2420;351.
 
-
-Package rerunfilecheck Warning: File `FreeRTOS_LPC2148.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `FreeRTOS_LPC2148.out':
-(rerunfilecheck)             Before: 7040731353102BE2A02A50D54B96F4D5;393
-(rerunfilecheck)             After:  0E01DDC64ECEB42096E67F050E6B2420;351.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1138,25 +1132,22 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 16778 strings out of 493634
- 330904 string characters out of 3134423
- 394252 words of memory out of 3000000
- 19735 multiletter control sequences out of 15000+200000
+ 16773 strings out of 493634
+ 330858 string characters out of 3134423
+ 393252 words of memory out of 3000000
+ 19731 multiletter control sequences out of 15000+200000
  8641 words of font info for 32 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  56i,17n,55p,420b,557s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Outline0.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-<C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmss10.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmss12.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/SUMAKAR/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/SUMAKAR/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on FreeRTOS_LPC2148.pdf (12 pages, 187092 bytes).
+<C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmss10.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmss12.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/SUMAKAR/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/SUMAKAR/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on FreeRTOS_LPC2148.pdf (12 pages, 186389 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
