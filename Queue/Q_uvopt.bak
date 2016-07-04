@@ -198,7 +198,7 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>3</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -270,15 +270,93 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>64</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>11</CurrentLine>
+      <TopLine>92</TopLine>
+      <CurrentLine>92</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
     </File>
   </Group>
+
+  <AlienFiles>
+    <PathWithFilename>C:\Users\SUMAKAR\Documents\RtOs\Queue\parameter_queue.c</PathWithFilename>
+    <TopLine>123</TopLine>
+    <CurrentLine>147</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>C:\Users\SUMAKAR\Documents\RtOs\Queue\rough2.c</PathWithFilename>
+    <TopLine>175</TopLine>
+    <CurrentLine>199</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>C:\Users\SUMAKAR\Documents\RtOs\Queue\rough.c</PathWithFilename>
+    <TopLine>200</TopLine>
+    <CurrentLine>200</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
 
   <WinLayout>
     <sActiveDebugView>Default</sActiveDebugView>
@@ -1625,9 +1703,27 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>64</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>11</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>92</TopLine>
+          <CurrentLine>92</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>C:\Users\SUMAKAR\Documents\RtOs\Queue\rough.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>200</TopLine>
+          <CurrentLine>200</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>C:\Users\SUMAKAR\Documents\RtOs\Queue\rough2.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>175</TopLine>
+          <CurrentLine>199</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>C:\Users\SUMAKAR\Documents\RtOs\Queue\parameter_queue.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>123</TopLine>
+          <CurrentLine>147</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

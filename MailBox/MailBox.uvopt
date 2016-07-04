@@ -189,10 +189,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>100</ColumnNumber>
+      <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>223</TopLine>
-      <CurrentLine>223</CurrentLine>
+      <TopLine>256</TopLine>
+      <CurrentLine>259</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -1668,9 +1668,9 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>100</ColumnNumber>
-          <TopLine>223</TopLine>
-          <CurrentLine>223</CurrentLine>
+          <ColumnNumber>1</ColumnNumber>
+          <TopLine>256</TopLine>
+          <CurrentLine>259</CurrentLine>
         </Doc>
         <Doc>
           <Name>S:\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h</Name>

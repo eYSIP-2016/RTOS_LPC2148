@@ -270,10 +270,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>4</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>92</TopLine>
-      <CurrentLine>92</CurrentLine>
+      <TopLine>123</TopLine>
+      <CurrentLine>137</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -281,9 +281,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\SUMAKAR\Documents\RtOs\Queue\rough.c</PathWithFilename>
-    <TopLine>200</TopLine>
-    <CurrentLine>200</CurrentLine>
+    <PathWithFilename>C:\Users\SUMAKAR\Documents\RtOs\Queue\parameter_queue.c</PathWithFilename>
+    <TopLine>123</TopLine>
+    <CurrentLine>147</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -333,9 +333,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\SUMAKAR\Documents\RtOs\Queue\parameter_queue.c</PathWithFilename>
-    <TopLine>123</TopLine>
-    <CurrentLine>147</CurrentLine>
+    <PathWithFilename>C:\Users\SUMAKAR\Documents\RtOs\Queue\rough.c</PathWithFilename>
+    <TopLine>200</TopLine>
+    <CurrentLine>200</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1703,9 +1703,9 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>92</TopLine>
-          <CurrentLine>92</CurrentLine>
+          <ColumnNumber>4</ColumnNumber>
+          <TopLine>123</TopLine>
+          <CurrentLine>137</CurrentLine>
         </Doc>
         <Doc>
           <Name>C:\Users\SUMAKAR\Documents\RtOs\Queue\rough.c</Name>

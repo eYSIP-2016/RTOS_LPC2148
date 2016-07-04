@@ -1,79 +1,3 @@
-/*
-
-Replaced contenets in lpc21xx with that of lpc214x to remove warnings 
-Include startup.s from experiments in case of data abort
-Counting.axf: Error: L6218E: Undefined symbol pvPortMalloc (referred from tasks.o). error is caused when heap 2 is not included
-*/
-
-/************************************************************************ 
-Written by: K V S SUMAKAR and KARTIKEYAN V, ERTS Lab, IIT Bombay. Date: 23 June 2016
- IDE: Keil uVision4
-
-
-Problem:To use queue to solve polling of Queue
-
-Concepts covered:	
-Queue,Parameterised Tasks,MultiTasking etc
-
- Note:
- 
- 1. Do don't use the default Startup.s	provided by Keil. 
- 	Instead follow the procedure given below :
-	a. Copy the Startup.S file from any example project into the folder containing the project.
-	b. Right click on the group icon in the project window and click on 'Add files to Group <group name>'
-	c. Select and add the Startup.s file which was previously added.
-
- 2. Make sure that in the Target options following settings are 
- 	done for proper operation of the code
-
- 	Device -> Microcontroller	: LPC2148
- 	Target -> Frequency			: 12 Mhz
- 	Output -> Create Hex File	: Checked (For more information read section 4.3.1 "Setting up Project in Keil uVision" in the hardware manual)
-	C/C++  -> Include paths 	: ..\..\Source\include;..\..\Source\portable\RVDS\ARM7_LPC21xx;..\<project-folder-name>
-	ASM    -> Include paths 	: ..\..\Source\portable\RVDS\ARM7_LPC21xx
-
-
- 3. Ensure that following settings are done in Startup.s configuration wizard:
-
- 	Clock Settings:
-		
-	PLL Steup	 >>	 MSEL=5, PSEL=2
-	VPBDIV Setup >>  VPBCLK = CPU Clock
-	
- 4. Include the following FreeRTOS C files in the project either in the same group, or by creating a new group in the project.
-	
-	 ( These will be available in the FreeRTOS source files. )
-	
-	FILE		SOURCE (may change according to location of FreeRTOS source code)
-	list.c	 	FreeRTOSv8.0.1\FreeRTOS\Source\list.c
-	queue.c		FreeRTOSv8.0.1\FreeRTOS\Source\queue.c
-	tasks.c		FreeRTOSv8.0.1\FreeRTOS\Source\tasks.c
-	heap_2.c	FreeRTOSv8.0.1\FreeRTOS\Source\portable\MemMang\heap_2.c
-	port.c		FreeRTOSv8.0.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\port.c
-	portASM.s	FreeRTOSv8.0.1\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portASM.s
-	
- 5. Copy FreeRTOSConfig.h file into	the project folder. Configure it according to the application. 
- 	use this link for reference : http://www.freertos.org/a00110.html
- 
-	 set configUSE_COUNTING_SEMAPHORES to 1	 to use counting semaphore
-	For more details refer section 4.8 in the hardware manual.
-
-
-
-
-Declaration of Queue :
-QueueHandle_t xQueue= 0;
-  xQueue = xQueueCreate(length,size of each element);
-	
-
-*/
-//****************************************************************************************************/
-/* 
-Note: To use mutex semaphore you need to initialize  configUSE_MUTEXES to 1 
-*/
-
-
-
 #include <stdlib.h>
 #include "FreeRTOS.h"
 #include "task.h"
@@ -89,6 +13,10 @@ Note: To use mutex semaphore you need to initialize  configUSE_MUTEXES to 1
 
 unsigned char Temp=0;
 int count=0;
+QueueHandle_t xQueue= 0;
+ 
+void Txtask(char *);
+void Rxtask(void *);
 
 void Init_UART0(void);
 void  __irq IRQ_UART0(void);
@@ -97,16 +25,11 @@ void UART0_SendStr(const unsigned char *str);
 
 
  
-char *tx1={"Task 1 sent a message"};
-char *tx2={"Task 2 sent a message"};
-char *tx3={"Task 3 sent a message"};
-char *tx4={"Task 4 sent a message"};
+char *tx1={"Task 1 "};
+char *tx2={"Task 2"};
+char *tx3={"Task 3"};
+char *tx4={"Task 4"};
 
-
-QueueHandle_t xQueue= 0;
- 
-void Txtask(char *);
-void Rxtask(void *);
 
 
 
@@ -157,16 +80,22 @@ void UART0_SendStr(const unsigned char *str)
    }
 }
 
+
 void Txtask(char *p)			// task which writes data on to the Queue
 {
 	while(1)
 	{
 					  
 		if(xQueueSend(xQueue,p,1000) == pdTRUE)   	// wait for 1000ms to tx queue message
-		{  vTaskResume("RxTask");
+		{	UART0_SendStr("\nData sent to Queue : \t");
+			UART0_SendStr(p);  
+		vTaskResume("RxTask");
 		//Data added to Q
-		}				  
-		
+				}				  
+		else
+		{  	
+		}
+	//	vTaskDelay(2000);
 	}
 	
 }
@@ -174,12 +103,15 @@ void Txtask(char *p)			// task which writes data on to the Queue
 void Rxtask(void *p)			// task which reads data from the Queue
 {
 
+unsigned char rx_success_count[11]={0};
 unsigned char *rxptr;
+rxptr = rx_success_count;
 
 	while(1)
 	{
 		if(xQueueReceive(xQueue,rxptr,1000) == pdTRUE)		// wait for 1000ms to rx queue message
 		{  	UART0_SendStr("\n");
+			UART0_SendStr("Data read from Queue : \t");
 			UART0_SendStr(rxptr);
 			vTaskDelay(40);			   // if RX success then display  rx_success_count
 		}
@@ -198,7 +130,7 @@ int main()
  	
 				 /*create queue	of length=3 and of size int*/
 	xQueue = xQueueCreate(7,40);
-			
+	UART0_SendStr("Queue\n");		
 				/* creating the 2 task with the same priority */
 	xTaskCreate(Txtask,"TxTask 1", configMINIMAL_STACK_SIZE,tx1, tskIDLE_PRIORITY + 1, NULL);
 	xTaskCreate(Txtask,"TxTask 2", configMINIMAL_STACK_SIZE,tx2, tskIDLE_PRIORITY + 1, NULL);
