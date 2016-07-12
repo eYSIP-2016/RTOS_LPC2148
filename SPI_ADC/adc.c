@@ -140,6 +140,8 @@ unsigned int Sharp_GP2D12_Estimation(unsigned int Val)
  }
  return DistanceInt;
 }
+//This Function estimates the raw digital data of Sharp sensor in mm
+
 
 //This function convetrs the raw digital data of battery to represent actual battery voltage
 unsigned int Batt_Voltage_Conversion(unsigned int Val)

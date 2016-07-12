@@ -1,4 +1,4 @@
---cpu ARM7TDMI "adc.o" "lcd.o" "spi.o" "startup.o" "main.o" --strict --scatter "SPI_ADC.sct" 
+--cpu ARM7TDMI "lcd.o" "spi.o" "startup.o" "main.o" --strict --scatter "SPI_ADC.sct" 
 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\SPI_ADC.map" -o "SPI_ADC.axf"

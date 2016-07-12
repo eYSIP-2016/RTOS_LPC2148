@@ -1,20 +1,19 @@
 *** Creating Trace Output File 'SPI_ADC.tra' Ok.
 ### Preparing for ADS-LD.
 ### Creating ADS-LD Command Line
-### List of Objects: adding '"adc.o"'
 ### List of Objects: adding '"lcd.o"'
 ### List of Objects: adding '"spi.o"'
 ### List of Objects: adding '"startup.o"'
 ### List of Objects: adding '"main.o"'
 ### ADS-LD Command completed:
---cpu ARM7TDMI "adc.o" "lcd.o" "spi.o" "startup.o" "main.o" --strict --scatter "SPI_ADC.sct" 
+--cpu ARM7TDMI "lcd.o" "spi.o" "startup.o" "main.o" --strict --scatter "SPI_ADC.sct" 
 --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\SPI_ADC.map" -o "SPI_ADC.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: 'SPI_ADC.axf'
 ### ADS-LD Command File: 'SPI_ADC.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'SPI_ADC.lnp', Handle=0x00000EEC
+### Creating CmdFile 'SPI_ADC.lnp', Handle=0x0000027C
 ### Writing '.lnp' file
 ### ADS-LD Command file 'SPI_ADC.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
