@@ -1,0 +1,1 @@
+-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IS:\FreeRTOSv9.0.0\FreeRTOS\Source\include -IS:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx -I. -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" -DARM7_LPC21xx_KEIL_RVDS -DKEIL_THUMB_INTERWORK -o "backup.o" --omf_browse "backup.crf" --depend "backup.d" "backup.c"

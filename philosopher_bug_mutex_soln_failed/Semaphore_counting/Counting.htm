@@ -1,0 +1,1158 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [C:\Users\SUMAKAR\Documents\RtOs\Semaphore_counting\Counting.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image C:\Users\SUMAKAR\Documents\RtOs\Semaphore_counting\Counting.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 728]: Last Updated: Sun Jul 17 23:45:09 2016
+<BR><P>
+<H3>Maximum Stack Usage =        152 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; vTaskStartScheduler &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[26828d0]">Reset_Handler</a>
+ <LI><a href="#[268290c]">__user_initial_stackheap</a>
+ <LI><a href="#[2680008]">vPortStartFirstTask</a>
+ <LI><a href="#[2680ff8]">vPortYield</a>
+ <LI><a href="#[268281c]">vPortYieldProcessor</a>
+ <LI><a href="#[267ffcc]">vPreemptiveTick</a>
+ <LI><a href="#[2682aec]">Undef_Handler</a>
+ <LI><a href="#[2682ab0]">PAbt_Handler</a>
+ <LI><a href="#[2682a74]">DAbt_Handler</a>
+ <LI><a href="#[2682a38]">IRQ_Handler</a>
+ <LI><a href="#[26829fc]">FIQ_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[2682aec]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2682aec]">Undef_Handler</a><BR>
+ <LI><a href="#[2682ab0]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2682ab0]">PAbt_Handler</a><BR>
+ <LI><a href="#[2682a74]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2682a74]">DAbt_Handler</a><BR>
+ <LI><a href="#[2682a38]">IRQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2682a38]">IRQ_Handler</a><BR>
+ <LI><a href="#[26829fc]">FIQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[26829fc]">FIQ_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[26828d0]">Reset_Handler</a>
+ <LI><a href="#[2682aec]">Undef_Handler</a>
+ <LI><a href="#[268281c]">vPortYieldProcessor</a>
+ <LI><a href="#[2682ab0]">PAbt_Handler</a>
+ <LI><a href="#[2682a74]">DAbt_Handler</a>
+ <LI><a href="#[2682a38]">IRQ_Handler</a>
+ <LI><a href="#[26829fc]">FIQ_Handler</a>
+ <LI><a href="#[267dac4]">__main</a>
+ <LI><a href="#[2683050]">main</a>
+ <LI><a href="#[268308c]">vfork</a>
+ <LI><a href="#[2681e08]">prvIdleTask</a>
+ <LI><a href="#[267ffcc]">vPreemptiveTick</a>
+ <LI><a href="#[2679168]">__I$use$semihosting</a>
+ <LI><a href="#[26818a4]">vTaskSwitchContext</a>
+ <LI><a href="#[2681a48]">xTaskIncrementTick</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[26828d0]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[267dac4]"></a>__main</STRONG> (ARM, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[2676c60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[267d998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[2676c60]"></a>__scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[267dac4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[2676c24]"></a>__scatterload_rt2</STRONG> (ARM, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[267d998]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[2676be8]"></a>__scatterload_null</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[2676a44]"></a>__scatterload_copy</STRONG> (ARM, 40 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2676a44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2676a44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[2676954]"></a>__scatterload_zeroinit</STRONG> (ARM, 44 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[267c408]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init &rArr; _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2679ec4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[267d128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li (via Veneer)
+</UL>
+
+<P><STRONG><a name="[267a554]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+
+<P><STRONG><a name="[267a5cc]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
+
+<P><STRONG><a name="[267a98c]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[267a824]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[267a464]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[267a4dc]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[267a89c]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[267a7ac]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[267ad88]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
+
+<P><STRONG><a name="[267abe4]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+
+<P><STRONG><a name="[267ab6c]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[267aaf4]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[267aa7c]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[267aa04]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[267ac98]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[267a428]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
+
+<P><STRONG><a name="[267a914]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[267a734]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[267ad10]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[2678538]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[2679b40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2677200]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[2677020]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[2676fe4]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[267714c]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[26772b4]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[26770d4]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[267d998]"></a>__rt_entry</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[2676c24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<LI><a href="#[267dac4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[267d1dc]"></a>__rt_entry_presh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[267ce58]"></a>__rt_entry_sh</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[267cc00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[267d128]"></a>__rt_entry_li</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_li &rArr; __rt_lib_init &rArr; _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[267c408]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[267d164]"></a>__rt_entry_postsh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[267d074]"></a>__rt_entry_main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Calls]<UL><LI><a href="#[267ca98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via BX)
+</UL>
+
+<P><STRONG><a name="[267d0b0]"></a>__rt_entry_postli_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[267bc88]"></a>__rt_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[267ca98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2679b40]"></a>__rt_exit_ls</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[2678538]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2679b7c]"></a>__rt_exit_prels_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[2679b04]"></a>__rt_exit_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[2679d5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[26832a8]"></a>UART0_SendByte</STRONG> (ARM, 32 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[26831f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_SendStr
+<LI><a href="#[268326c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_UART0
+</UL>
+
+<P><STRONG><a name="[268326c]"></a>IRQ_UART0</STRONG> (ARM, 48 bytes, Stack size 16 bytes, main.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[26832a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_SendByte
+</UL>
+
+<P><STRONG><a name="[2683230]"></a>Init_UART0</STRONG> (ARM, 124 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[268317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Peripherals
+</UL>
+
+<P><STRONG><a name="[26831f4]"></a>UART0_SendStr</STRONG> (ARM, 72 bytes, Stack size 4 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = UART0_SendStr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26832a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_SendByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2683050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[2683104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rxtask
+</UL>
+
+<P><STRONG><a name="[26831b8]"></a>Init_Ports</STRONG> (ARM, 4 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[268317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Peripherals
+</UL>
+
+<P><STRONG><a name="[268317c]"></a>Init_Peripherals</STRONG> (ARM, 20 bytes, Stack size 4 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Init_Peripherals
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26831b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Ports
+<LI><a href="#[2683230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_UART0
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2683050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2683140]"></a>DelaymSec</STRONG> (ARM, 44 bytes, Stack size 0 bytes, main.o(.text), UNUSED)
+
+<P><STRONG><a name="[2683104]"></a>Rxtask</STRONG> (ARM, 124 bytes, Stack size 24 bytes, main.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[2682fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[26831f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_SendStr
+</UL>
+
+<P><STRONG><a name="[26830c8]"></a>attach</STRONG> (ARM, 76 bytes, Stack size 0 bytes, main.o(.text), UNUSED)
+
+<P><STRONG><a name="[268308c]"></a>vfork</STRONG> (ARM, 1244 bytes, Stack size 16 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112 + Unknown Stack Size
+<LI>Call Chain = vfork &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; xTaskPriorityDisinherit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[267e550]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_idivmod
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[2682f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+<LI><a href="#[2682fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[2683050]"></a>main</STRONG> (ARM, 172 bytes, Stack size 16 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = main &rArr; vTaskStartScheduler &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2682dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[2682e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+<LI><a href="#[2682eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateMutex
+<LI><a href="#[2682ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateCountingSemaphore
+<LI><a href="#[2682f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
+<LI><a href="#[268317c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Peripherals
+<LI><a href="#[26831f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_SendStr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+</UL>
+<P><STRONG><a name="[268290c]"></a>__user_initial_stackheap</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[267cc00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[2682dbc]"></a>xTaskCreate</STRONG> (ARM, 172 bytes, Stack size 56 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120 + Unknown Stack Size
+<LI>Call Chain = xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<LI><a href="#[268128c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+<LI><a href="#[2681f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewTask
+<LI><a href="#[2681fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
+<LI><a href="#[2683050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2681a84]"></a>vTaskDelete</STRONG> (ARM, 220 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[2681ef8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvDeleteTCB
+<LI><a href="#[2681f34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvResetNextTaskUnblockTime
+</UL>
+
+<P><STRONG><a name="[2681a48]"></a>xTaskIncrementTick</STRONG> (ARM, 440 bytes, Stack size 24 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[2681f34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvResetNextTaskUnblockTime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> portasm.o(PORT_ASM)
+</UL>
+<P><STRONG><a name="[2681a0c]"></a>xTaskResumeAll</STRONG> (ARM, 348 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[2681a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIncrementTick
+<LI><a href="#[2681f34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvResetNextTaskUnblockTime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2681034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<LI><a href="#[268128c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+<LI><a href="#[2681700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetHandle
+<LI><a href="#[2681994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
+<LI><a href="#[2681e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[2682fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+</UL>
+
+<P><STRONG><a name="[26819d0]"></a>vTaskSuspendAll</STRONG> (ARM, 24 bytes, Stack size 0 bytes, tasks.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<LI><a href="#[268128c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+<LI><a href="#[2681700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetHandle
+<LI><a href="#[2681994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
+<LI><a href="#[2681e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[2682fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+</UL>
+
+<P><STRONG><a name="[2681994]"></a>vTaskDelayUntil</STRONG> (ARM, 152 bytes, Stack size 32 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+
+<P><STRONG><a name="[2682fd8]"></a>vTaskDelay</STRONG> (ARM, 64 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
+<LI>Call Chain = vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[268308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vfork
+<LI><a href="#[2683104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rxtask
+</UL>
+
+<P><STRONG><a name="[2681958]"></a>uxTaskPriorityGet</STRONG> (ARM, 60 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+
+<P><STRONG><a name="[268191c]"></a>uxTaskPriorityGetFromISR</STRONG> (ARM, 44 bytes, Stack size 0 bytes, tasks.o(.text), UNUSED)
+
+<P><STRONG><a name="[26818e0]"></a>vTaskPrioritySet</STRONG> (ARM, 328 bytes, Stack size 32 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+
+<P><STRONG><a name="[26818a4]"></a>vTaskSwitchContext</STRONG> (ARM, 184 bytes, Stack size 0 bytes, tasks.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> portasm.o(PORT_ASM)
+</UL>
+<P><STRONG><a name="[2682f24]"></a>vTaskSuspend</STRONG> (ARM, 204 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[26818a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSwitchContext
+<LI><a href="#[2681f34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvResetNextTaskUnblockTime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2683104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rxtask
+</UL>
+
+<P><STRONG><a name="[2682f9c]"></a>vTaskResume</STRONG> (ARM, 160 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = vTaskResume
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[2681e80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvTaskIsTaskSuspended
+</UL>
+<BR>[Called By]<UL><LI><a href="#[268308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vfork
+</UL>
+
+<P><STRONG><a name="[2681868]"></a>xTaskResumeFromISR</STRONG> (ARM, 248 bytes, Stack size 24 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[2681e80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvTaskIsTaskSuspended
+</UL>
+
+<P><STRONG><a name="[2682f60]"></a>vTaskStartScheduler</STRONG> (ARM, 108 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136 + Unknown Stack Size
+<LI>Call Chain = vTaskStartScheduler &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680fbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+<LI><a href="#[2682dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2683050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[268182c]"></a>vTaskEndScheduler</STRONG> (ARM, 40 bytes, Stack size 8 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[26810e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEndScheduler
+</UL>
+
+<P><STRONG><a name="[26817f0]"></a>xTaskGetTickCount</STRONG> (ARM, 32 bytes, Stack size 8 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+
+<P><STRONG><a name="[26817b4]"></a>xTaskGetTickCountFromISR</STRONG> (ARM, 16 bytes, Stack size 0 bytes, tasks.o(.text), UNUSED)
+
+<P><STRONG><a name="[2681778]"></a>uxTaskGetNumberOfTasks</STRONG> (ARM, 12 bytes, Stack size 0 bytes, tasks.o(.text), UNUSED)
+
+<P><STRONG><a name="[268173c]"></a>pcTaskGetName</STRONG> (ARM, 40 bytes, Stack size 0 bytes, tasks.o(.text), UNUSED)
+
+<P><STRONG><a name="[2681700]"></a>xTaskGetHandle</STRONG> (ARM, 208 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681dcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvSearchForNameWithinSingleList
+</UL>
+
+<P><STRONG><a name="[26816c4]"></a>vTaskPlaceOnEventList</STRONG> (ARM, 52 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsert
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[2681688]"></a>vTaskPlaceOnUnorderedEventList</STRONG> (ARM, 72 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+
+<P><STRONG><a name="[268164c]"></a>xTaskRemoveFromEventList</STRONG> (ARM, 180 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = xTaskRemoveFromEventList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2680698]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceiveFromISR
+<LI><a href="#[26806d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGiveFromISR
+<LI><a href="#[2680710]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSendFromISR
+<LI><a href="#[268074c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[26809a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[2681610]"></a>xTaskRemoveFromUnorderedEventList</STRONG> (ARM, 156 bytes, Stack size 24 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+
+<P><STRONG><a name="[26815d4]"></a>vTaskSetTimeOutState</STRONG> (ARM, 28 bytes, Stack size 0 bytes, tasks.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[2681598]"></a>xTaskCheckForTimeOut</STRONG> (ARM, 160 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = xTaskCheckForTimeOut
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[26815d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSetTimeOutState
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[268155c]"></a>vTaskMissedYield</STRONG> (ARM, 16 bytes, Stack size 0 bytes, tasks.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[26809a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+</UL>
+
+<P><STRONG><a name="[2681520]"></a>xTaskGetCurrentTaskHandle</STRONG> (ARM, 12 bytes, Stack size 0 bytes, tasks.o(.text), UNUSED)
+
+<P><STRONG><a name="[26814e4]"></a>vTaskPriorityInherit</STRONG> (ARM, 232 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = vTaskPriorityInherit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[26814a8]"></a>xTaskPriorityDisinherit</STRONG> (ARM, 164 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = xTaskPriorityDisinherit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[268092c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+</UL>
+
+<P><STRONG><a name="[268146c]"></a>uxTaskResetEventItemValue</STRONG> (ARM, 44 bytes, Stack size 0 bytes, tasks.o(.text), UNUSED)
+
+<P><STRONG><a name="[2681430]"></a>pvTaskIncrementMutexHeldCount</STRONG> (ARM, 52 bytes, Stack size 0 bytes, tasks.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[26813f4]"></a>ulTaskNotifyTake</STRONG> (ARM, 180 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+
+<P><STRONG><a name="[26813b8]"></a>xTaskNotifyWait</STRONG> (ARM, 228 bytes, Stack size 24 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+
+<P><STRONG><a name="[268137c]"></a>xTaskGenericNotify</STRONG> (ARM, 300 bytes, Stack size 32 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+
+<P><STRONG><a name="[2681340]"></a>xTaskGenericNotifyFromISR</STRONG> (ARM, 364 bytes, Stack size 40 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+
+<P><STRONG><a name="[2681304]"></a>vTaskNotifyGiveFromISR</STRONG> (ARM, 224 bytes, Stack size 24 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+
+<P><STRONG><a name="[26812c8]"></a>xTaskNotifyStateClear</STRONG> (ARM, 88 bytes, Stack size 16 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+
+<P><STRONG><a name="[26811d8]"></a>vListInitialise</STRONG> (ARM, 44 bytes, Stack size 0 bytes, list.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[268074c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[2681fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseTaskLists
+</UL>
+
+<P><STRONG><a name="[268119c]"></a>vListInitialiseItem</STRONG> (ARM, 12 bytes, Stack size 0 bytes, list.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewTask
+</UL>
+
+<P><STRONG><a name="[2681124]"></a>vListInsertEnd</STRONG> (ARM, 48 bytes, Stack size 0 bytes, list.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskNotifyGiveFromISR
+<LI><a href="#[2681340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyFromISR
+<LI><a href="#[268137c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotify
+<LI><a href="#[26814a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskPriorityDisinherit
+<LI><a href="#[26814e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityInherit
+<LI><a href="#[2681610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromUnorderedEventList
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[2681688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnUnorderedEventList
+<LI><a href="#[2681868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeFromISR
+<LI><a href="#[26818e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIncrementTick
+<LI><a href="#[2681a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+<LI><a href="#[2681fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
+<LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[2682f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+</UL>
+
+<P><STRONG><a name="[2681160]"></a>vListInsert</STRONG> (ARM, 92 bytes, Stack size 0 bytes, list.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[26816c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+
+<P><STRONG><a name="[2681214]"></a>uxListRemove</STRONG> (ARM, 76 bytes, Stack size 0 bytes, list.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskNotifyGiveFromISR
+<LI><a href="#[2681340]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyFromISR
+<LI><a href="#[268137c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotify
+<LI><a href="#[26814a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskPriorityDisinherit
+<LI><a href="#[26814e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityInherit
+<LI><a href="#[2681610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromUnorderedEventList
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[2681868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeFromISR
+<LI><a href="#[26818e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIncrementTick
+<LI><a href="#[2681a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
+<LI><a href="#[2681e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<LI><a href="#[2681ebc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+<LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[2682f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+</UL>
+
+<P><STRONG><a name="[268074c]"></a>xQueueGenericReset</STRONG> (ARM, 212 bytes, Stack size 16 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
+<LI>Call Chain = xQueueGenericReset &rArr; xTaskRemoveFromEventList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[26811d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInitialise
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26809e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewQueue
+</UL>
+
+<P><STRONG><a name="[2682e70]"></a>xQueueGenericCreate</STRONG> (ARM, 96 bytes, Stack size 32 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
+<LI>Call Chain = xQueueGenericCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26809e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewQueue
+<LI><a href="#[268128c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateMutex
+<LI><a href="#[2682ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateCountingSemaphore
+<LI><a href="#[2683050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2682df8]"></a>xQueueGenericSend</STRONG> (ARM, 380 bytes, Stack size 56 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
+<LI>Call Chain = xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; xTaskPriorityDisinherit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[268092c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[2680968]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
+<LI><a href="#[26809a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[26815d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSetTimeOutState
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[26816c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26808f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseMutex
+<LI><a href="#[268308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vfork
+</UL>
+
+<P><STRONG><a name="[2682eac]"></a>xQueueCreateMutex</STRONG> (ARM, 56 bytes, Stack size 24 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
+<LI>Call Chain = xQueueCreateMutex &rArr; prvInitialiseMutex &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; xTaskPriorityDisinherit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26808f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseMutex
+<LI><a href="#[2682e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2683050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2682ee8]"></a>xQueueCreateCountingSemaphore</STRONG> (ARM, 56 bytes, Stack size 16 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112 + Unknown Stack Size
+<LI>Call Chain = xQueueCreateCountingSemaphore &rArr; xQueueGenericCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2682e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2683050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2680710]"></a>xQueueGenericSendFromISR</STRONG> (ARM, 192 bytes, Stack size 40 bytes, queue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[268092c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+</UL>
+
+<P><STRONG><a name="[26806d4]"></a>xQueueGiveFromISR</STRONG> (ARM, 172 bytes, Stack size 32 bytes, queue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+</UL>
+
+<P><STRONG><a name="[2682e34]"></a>xQueueGenericReceive</STRONG> (ARM, 488 bytes, Stack size 56 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
+<LI>Call Chain = xQueueGenericReceive &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+<LI><a href="#[26808b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
+<LI><a href="#[26809a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvTaskIncrementMutexHeldCount
+<LI><a href="#[26814e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPriorityInherit
+<LI><a href="#[2681598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[26815d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSetTimeOutState
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[26816c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[268308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vfork
+<LI><a href="#[2683104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rxtask
+</UL>
+
+<P><STRONG><a name="[2680698]"></a>xQueueReceiveFromISR</STRONG> (ARM, 180 bytes, Stack size 40 bytes, queue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+</UL>
+
+<P><STRONG><a name="[268065c]"></a>xQueuePeekFromISR</STRONG> (ARM, 80 bytes, Stack size 32 bytes, queue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2680878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+</UL>
+
+<P><STRONG><a name="[2680620]"></a>uxQueueMessagesWaiting</STRONG> (ARM, 32 bytes, Stack size 16 bytes, queue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+
+<P><STRONG><a name="[26805e4]"></a>uxQueueSpacesAvailable</STRONG> (ARM, 48 bytes, Stack size 16 bytes, queue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+
+<P><STRONG><a name="[26805a8]"></a>uxQueueMessagesWaitingFromISR</STRONG> (ARM, 12 bytes, Stack size 0 bytes, queue.o(.text), UNUSED)
+
+<P><STRONG><a name="[268056c]"></a>vQueueDelete</STRONG> (ARM, 28 bytes, Stack size 16 bytes, queue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2681034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+</UL>
+
+<P><STRONG><a name="[2680530]"></a>xQueueIsQueueEmptyFromISR</STRONG> (ARM, 32 bytes, Stack size 0 bytes, queue.o(.text), UNUSED)
+
+<P><STRONG><a name="[26804f4]"></a>xQueueIsQueueFullFromISR</STRONG> (ARM, 36 bytes, Stack size 0 bytes, queue.o(.text), UNUSED)
+
+<P><STRONG><a name="[2681250]"></a>pxPortInitialiseStack</STRONG> (ARM, 240 bytes, Stack size 0 bytes, port.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681f70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewTask
+</UL>
+
+<P><STRONG><a name="[2680fbc]"></a>xPortStartScheduler</STRONG> (ARM, 24 bytes, Stack size 8 bytes, port.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = xPortStartScheduler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortStartFirstTask
+<LI><a href="#[2680170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvSetupTimerInterrupt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
+</UL>
+
+<P><STRONG><a name="[26810e8]"></a>vPortEndScheduler</STRONG> (ARM, 4 bytes, Stack size 0 bytes, port.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[268182c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskEndScheduler
+</UL>
+
+<P><STRONG><a name="[26810ac]"></a>vPortEnterCritical</STRONG> (ARM, 36 bytes, Stack size 0 bytes, port.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[26805e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxQueueSpacesAvailable
+<LI><a href="#[2680620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxQueueMessagesWaiting
+<LI><a href="#[268074c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[26808b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
+<LI><a href="#[2680968]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
+<LI><a href="#[26809a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[26812c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskNotifyStateClear
+<LI><a href="#[268137c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotify
+<LI><a href="#[26813b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskNotifyWait
+<LI><a href="#[26813f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulTaskNotifyTake
+<LI><a href="#[2681598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[26817f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
+<LI><a href="#[26818e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[2681958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxTaskPriorityGet
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
+<LI><a href="#[2681e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<LI><a href="#[2681fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[2682f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+</UL>
+
+<P><STRONG><a name="[2681070]"></a>vPortExitCritical</STRONG> (ARM, 68 bytes, Stack size 0 bytes, port.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[26805e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxQueueSpacesAvailable
+<LI><a href="#[2680620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxQueueMessagesWaiting
+<LI><a href="#[268074c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[26808b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
+<LI><a href="#[2680968]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
+<LI><a href="#[26809a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[26812c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskNotifyStateClear
+<LI><a href="#[268137c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotify
+<LI><a href="#[26813b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskNotifyWait
+<LI><a href="#[26813f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulTaskNotifyTake
+<LI><a href="#[2681598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[26817f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
+<LI><a href="#[26818e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[2681958]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxTaskPriorityGet
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
+<LI><a href="#[2681e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+<LI><a href="#[2681fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[2682f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+</UL>
+
+<P><STRONG><a name="[268128c]"></a>pvPortMalloc</STRONG> (ARM, 300 bytes, Stack size 24 bytes, heap_2.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[267ed48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvHeapInit
+<LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[2682e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+</UL>
+
+<P><STRONG><a name="[2681034]"></a>vPortFree</STRONG> (ARM, 116 bytes, Stack size 16 bytes, heap_2.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
+<LI>Call Chain = vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[268056c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vQueueDelete
+<LI><a href="#[2681ef8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvDeleteTCB
+<LI><a href="#[2682dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+
+<P><STRONG><a name="[267ec1c]"></a>xPortGetFreeHeapSize</STRONG> (ARM, 12 bytes, Stack size 0 bytes, heap_2.o(.text), UNUSED)
+
+<P><STRONG><a name="[267ebe0]"></a>vPortInitialiseBlocks</STRONG> (ARM, 4 bytes, Stack size 0 bytes, heap_2.o(.text), UNUSED)
+
+<P><STRONG><a name="[267e85c]"></a>__aeabi_memcpy</STRONG> (ARM, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2680878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+<LI><a href="#[268092c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+</UL>
+
+<P><STRONG><a name="[267e820]"></a>__rt_memcpy</STRONG> (ARM, 212 bytes, Stack size 0 bytes, rt_memcpy.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[267d524]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+</UL>
+
+<P><STRONG><a name="[267e7e4]"></a>_memcpy_lastbytes</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rt_memcpy.o(.text), UNUSED)
+
+<P><STRONG><a name="[267e58c]"></a>__aeabi_idiv</STRONG> (ARM, 0 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[267e550]"></a>__aeabi_idivmod</STRONG> (ARM, 384 bytes, Stack size 8 bytes, aeabi_sdiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_idivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[268308c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vfork
+</UL>
+
+<P><STRONG><a name="[267dc2c]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[267dbf0]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[267dbb4]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[267d524]"></a>__aeabi_memcpy4</STRONG> (ARM, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[267e820]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
+</UL>
+
+<P><STRONG><a name="[267d4e8]"></a>__aeabi_memcpy8</STRONG> (ARM, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[267d4ac]"></a>__rt_memcpy_w</STRONG> (ARM, 100 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[267d470]"></a>_memcpy_lastbytes_aligned</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rt_memcpy_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[267cc00]"></a>__user_setup_stackheap</STRONG> (ARM, 96 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[267bd78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[268290c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[267ce58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[267ca98]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[267bc88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit (via Veneer)
+<LI><a href="#[267ca20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[267d074]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[267bdb4]"></a>__user_libspace</STRONG> (ARM, 12 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[267bd78]"></a>__user_perproc_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[267cc00]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[267bd3c]"></a>__user_perthread_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[2679d5c]"></a>_sys_exit</STRONG> (ARM, 20 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2679b04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[2679834]"></a>__rt_fp_status_addr</STRONG> (ARM, 16 bytes, Stack size 0 bytes, rt_fp_status_addr_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2679ec4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init
+</UL>
+
+<P><STRONG><a name="[2679168]"></a>__I$use$semihosting</STRONG> (ARM, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> sys_exit.o(.text)
+</UL>
+<P><STRONG><a name="[267912c]"></a>__use_no_semihosting_swi</STRONG> (ARM, 4 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[2680008]"></a>vPortStartFirstTask</STRONG> (ARM, 0 bytes, Stack size unknown bytes, portasm.o(PORT_ASM))
+<BR><BR>[Called By]<UL><LI><a href="#[2680fbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+</UL>
+
+<P><STRONG><a name="[2680ff8]"></a>vPortYield</STRONG> (ARM, 0 bytes, Stack size unknown bytes, portasm.o(PORT_ASM))
+<BR><BR>[Called By]<UL><LI><a href="#[268074c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[268137c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotify
+<LI><a href="#[26813b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskNotifyWait
+<LI><a href="#[26813f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulTaskNotifyTake
+<LI><a href="#[26818e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPrioritySet
+<LI><a href="#[2681994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
+<LI><a href="#[2681e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIdleTask
+<LI><a href="#[2681fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+<LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+<LI><a href="#[2682f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+<LI><a href="#[2682fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+</UL>
+
+<P><STRONG><a name="[268281c]"></a>vPortYieldProcessor</STRONG> (ARM, 0 bytes, Stack size unknown bytes, portasm.o(PORT_ASM))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[267ffcc]"></a>vPreemptiveTick</STRONG> (ARM, 0 bytes, Stack size unknown bytes, portasm.o(PORT_ASM))
+<BR>[Address Reference Count : 1]<UL><LI> port.o(.text)
+</UL>
+<P><STRONG><a name="[2679ec4]"></a>_fp_init</STRONG> (ARM, 24 bytes, Stack size 8 bytes, fpinit.o(x$fpl$fpinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2679834]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_fp_status_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[267c408]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2679e88]"></a>__fplib_config_pureend_doubles</STRONG> (ARM, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[2682aec]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2682aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2682ab0]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2682ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2682a74]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2682a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2682a38]"></a>IRQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2682a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[26829fc]"></a>FIQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[26829fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26829fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2681fe8]"></a>prvInitialiseTaskLists</STRONG> (ARM, 112 bytes, Stack size 8 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvInitialiseTaskLists
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26811d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInitialise
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2681fac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
+</UL>
+
+<P><STRONG><a name="[2681fac]"></a>prvAddNewTaskToReadyList</STRONG> (ARM, 260 bytes, Stack size 8 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = prvAddNewTaskToReadyList &rArr; prvInitialiseTaskLists
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseTaskLists
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+
+<P><STRONG><a name="[2681f70]"></a>prvInitialiseNewTask</STRONG> (ARM, 240 bytes, Stack size 40 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = prvInitialiseNewTask
+</UL>
+<BR>[Calls]<UL><LI><a href="#[268119c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInitialiseItem
+<LI><a href="#[2681250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pxPortInitialiseStack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+
+<P><STRONG><a name="[2681f34]"></a>prvResetNextTaskUnblockTime</STRONG> (ARM, 88 bytes, Stack size 0 bytes, tasks.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIncrementTick
+<LI><a href="#[2681a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
+<LI><a href="#[2682f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspend
+</UL>
+
+<P><STRONG><a name="[2681ef8]"></a>prvDeleteTCB</STRONG> (ARM, 32 bytes, Stack size 8 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = prvDeleteTCB &rArr; vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681034]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2681a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelete
+<LI><a href="#[2681e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+</UL>
+
+<P><STRONG><a name="[2681ebc]"></a>prvAddCurrentTaskToDelayedList</STRONG> (ARM, 184 bytes, Stack size 24 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = prvAddCurrentTaskToDelayedList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
+<LI><a href="#[2681160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsert
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26813b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskNotifyWait
+<LI><a href="#[26813f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulTaskNotifyTake
+<LI><a href="#[2681688]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnUnorderedEventList
+<LI><a href="#[26816c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[2681994]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
+<LI><a href="#[2682fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+</UL>
+
+<P><STRONG><a name="[2681e80]"></a>prvTaskIsTaskSuspended</STRONG> (ARM, 128 bytes, Stack size 0 bytes, tasks.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2681868]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeFromISR
+<LI><a href="#[2682f9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskResume
+</UL>
+
+<P><STRONG><a name="[2681e44]"></a>prvCheckTasksWaitingTermination</STRONG> (ARM, 160 bytes, Stack size 16 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
+<LI>Call Chain = prvCheckTasksWaitingTermination &rArr; prvDeleteTCB &rArr; vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[2681214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[26819d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[2681a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2681ef8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvDeleteTCB
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2681e08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIdleTask
+</UL>
+
+<P><STRONG><a name="[2681e08]"></a>prvIdleTask</STRONG> (ARM, 36 bytes, Stack size 8 bytes, tasks.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
+<LI>Call Chain = prvIdleTask &rArr; prvCheckTasksWaitingTermination &rArr; prvDeleteTCB &rArr; vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2680ff8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[2681e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> tasks.o(.text)
+</UL>
+<P><STRONG><a name="[2681dcc]"></a>prvSearchForNameWithinSingleList</STRONG> (ARM, 244 bytes, Stack size 20 bytes, tasks.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[2681700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetHandle
+</UL>
+
+<P><STRONG><a name="[26809e0]"></a>prvInitialiseNewQueue</STRONG> (ARM, 72 bytes, Stack size 24 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
+<LI>Call Chain = prvInitialiseNewQueue &rArr; xQueueGenericReset &rArr; xTaskRemoveFromEventList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[268074c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+</UL>
+
+<P><STRONG><a name="[26809a4]"></a>prvUnlockQueue</STRONG> (ARM, 232 bytes, Stack size 16 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = prvUnlockQueue &rArr; xTaskRemoveFromEventList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[268155c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskMissedYield
+<LI><a href="#[268164c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[2680968]"></a>prvIsQueueFull</STRONG> (ARM, 56 bytes, Stack size 16 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = prvIsQueueFull
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[268092c]"></a>prvCopyDataToQueue</STRONG> (ARM, 244 bytes, Stack size 24 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = prvCopyDataToQueue &rArr; xTaskPriorityDisinherit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[267e85c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[26814a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskPriorityDisinherit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2680710]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSendFromISR
+<LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[26808f0]"></a>prvInitialiseMutex</STRONG> (ARM, 60 bytes, Stack size 8 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = prvInitialiseMutex &rArr; xQueueGenericSend &rArr; prvCopyDataToQueue &rArr; xTaskPriorityDisinherit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2682df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueCreateMutex
+</UL>
+
+<P><STRONG><a name="[26808b4]"></a>prvIsQueueEmpty</STRONG> (ARM, 52 bytes, Stack size 16 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = prvIsQueueEmpty
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2681070]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[26810ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[2680878]"></a>prvCopyDataFromQueue</STRONG> (ARM, 88 bytes, Stack size 16 bytes, queue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = prvCopyDataFromQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[267e85c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[268065c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueuePeekFromISR
+<LI><a href="#[2680698]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceiveFromISR
+<LI><a href="#[2682e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReceive
+</UL>
+
+<P><STRONG><a name="[2680170]"></a>prvSetupTimerInterrupt</STRONG> (ARM, 100 bytes, Stack size 0 bytes, port.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2680fbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+</UL>
+
+<P><STRONG><a name="[267ed48]"></a>prvHeapInit</STRONG> (ARM, 72 bytes, Stack size 0 bytes, heap_2.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[268128c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[267ca20]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[267ca98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+<HR></body></html>
