@@ -339,17 +339,17 @@ if (sen_dat[0]<190) //IR 1
 	 {
      //DelaymSec(150);
      Soft_Right();
-     DelaymSec(100);
+     DelaymSec(50);
 	 }
 	 else if(sen_dat[2]>170)
 	 {
 	  Right();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 	 else
 	 {
 	  Back();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 	 if(sen_dat[1]>190)
 	 {
@@ -374,17 +374,17 @@ if (ADC_Data[0]>170) //IR 2
 	 {
      //DelaymSec(150);
      Soft_Left2();
-     DelaymSec(100);
+     DelaymSec(50);
 	 }
 	 else if(ADC_Data[2]<180)
 	 {
 	  Soft_Right();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 	 else 
 	 {
 	  Back();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 
 	 if(ADC_Data[0]<180)
@@ -411,22 +411,22 @@ while(1)
 	 { 
      //DelaymSec(200);
      Right();
-	 DelaymSec(100);
+   	DelaymSec(50);
 	 }
 	 else if (sen_dat[0]>190)
 	 {
 	  Left();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 	 else if(sen_dat[2]>170)
 	 {
 	   Right();
-	   DelaymSec(100);
+	   DelaymSec(50);
 	 }
 	 else
 	 {
 	  Back();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
     
 	 if(sen_dat[1]>200)
@@ -444,7 +444,7 @@ while(1)
 {
 UpdateLeftPWM(400);	//Velocity Setting
  UpdateRightPWM(400);	//Velocity Setting
- if( ADC_Data[2]>170) //IR 4
+ if( ADC_Data[2]>150) //IR 4
    {
      Stop();
 	 vTaskSuspend(xforward);
@@ -452,17 +452,17 @@ UpdateLeftPWM(400);	//Velocity Setting
 	 {
      //DelaymSec(200);
      Soft_Right2();
-     DelaymSec(100);
+     DelaymSec(50);
 	 }
 	 else if(ADC_Data[0]<170)
 	 {
 	  Soft_Left();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 	 else
 	 {
 	 Back();
-	 DelaymSec(100);
+	 DelaymSec(50);
 	 }
 	 if(ADC_Data[2]<180)
 	 {
@@ -486,17 +486,17 @@ UpdateLeftPWM(400);	//Velocity Setting
 	 {
      //DelaymSec(200);
      Soft_Left();
-     DelaymSec(100);
+     DelaymSec(50);
 	 }
 	 else if(sen_dat[0]<190)
 	 {
 	 Right();
-	 DelaymSec(100);
+	 DelaymSec(50);
 	 }
 	 else
 	 {
 	 Back();
-	 DelaymSec(100);
+	 DelaymSec(50);
 	 }
 	 if(sen_dat[2]>170)
 	 {
@@ -512,7 +512,7 @@ while(1)
 {
 UpdateLeftPWM(400);	//Velocity Setting
  UpdateRightPWM(400);	//Velocity Setting
- if(sen_dat[4]<200) //IR 6
+ if(sen_dat[4]<210) //IR 6
    {
      Stop();
 	 vTaskSuspend(xforward);
@@ -520,17 +520,17 @@ UpdateLeftPWM(400);	//Velocity Setting
 	 {
      //DelaymSec(200);
      Soft_Right();
-     DelaymSec(100);
+     DelaymSec(50);
 	 }
 	 else if(ADC_Data[0]<150)
 	 {
 	 Soft_Left();
-	 DelaymSec(100);
+	 DelaymSec(50);
 	 }
 	 else
 	 {
 	 Stop();
-	 DelaymSec(300);
+	 DelaymSec(100);
 	 }
 	 if(sen_dat[4]>200)
 	 {
@@ -546,7 +546,7 @@ while(1)
 {
  UpdateLeftPWM(400);	//Velocity Setting
  UpdateRightPWM(400);	//Velocity Setting
- if(sen_dat[3]<200) //IR 7
+ if(sen_dat[3]<210) //IR 7
    {
      Stop();
 	 vTaskSuspend(xforward);
@@ -554,22 +554,22 @@ while(1)
 	 { 
      //DelaymSec(200);
      Forward();
-	 DelaymSec(100);
+	 DelaymSec(50);
 	 }
 	 else if (sen_dat[0]>190)
 	 {
 	  Left();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 	 else if (sen_dat[2]>170) 
 	 {
 	  Right();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
 	 else
 	 {
 	  Back();
-	  DelaymSec(100);
+	  DelaymSec(50);
 	 }
     
 	 if(sen_dat[3]>200)
@@ -585,27 +585,27 @@ void IR8(void *p)
 {
 while(1)
 {
- UpdateLeftPWM(300);	//Velocity Setting
- UpdateRightPWM(300);	//Velocity Setting
- if(sen_dat[5]<180) //IR 7
+ UpdateLeftPWM(400);	//Velocity Setting
+ UpdateRightPWM(400);	//Velocity Setting
+ if(sen_dat[5]<210) //IR 7
    {
      Stop();
 	 vTaskSuspend(xforward);
 	 if( ADC_Data[2]<190)
 	 {
-     //DelaymSec(200);
+     //DelaymSec(50);
      Soft_Right();
-     DelaymSec(100);
+     DelaymSec(50);
 	 }
 	 else if(ADC_Data[0]<150)
 	 {
 	 Soft_Left();
-	 DelaymSec(100);
+	 DelaymSec(50);
 	 }
 	 else
 	 {
 	 Stop();
-	 DelaymSec(500);
+	 DelaymSec(50);
 	 }
 	 if(sen_dat[5]>190)
 	 {
@@ -619,16 +619,16 @@ void IR2_IR3(void *p)
 {
  while(1)
 {
-UpdateLeftPWM(300);	//Velocity Setting
-UpdateRightPWM(300);	//Velocity Setting
+UpdateLeftPWM(400);	//Velocity Setting
+UpdateRightPWM(400);	//Velocity Setting
 if((ADC_Data[0]>180) &&(sen_dat[1]<180)) //IR 2 and IR 3
    {
      Stop();
 	 vTaskSuspend(xforward);
-	 Back();
-     DelaymSec(100);
-     Soft_Left2();
-     DelaymSec(100);
+	// Back();
+     //DelaymSec(50);
+     Soft_Right2();
+     DelaymSec(50);
 	 if((ADC_Data[0]<180)&&(sen_dat[1]>180))
 	 {
 	   vTaskResume(xforward);
@@ -641,16 +641,16 @@ void IR2_IR3_IR4 (void *p)
 {
  while(1)
 {
-UpdateLeftPWM(300);	//Velocity Setting
-UpdateRightPWM(300);	//Velocity Setting
+UpdateLeftPWM(400);	//Velocity Setting
+UpdateRightPWM(400);	//Velocity Setting
 if(( ADC_Data[2]>150) && (sen_dat[1]<190) && (ADC_Data[0]>120) ) //IR 3 and IR 4
    {
      Stop();
 	 vTaskSuspend(xforward);
-	 Back();
-     DelaymSec(100);
-     Soft_Right2();
-     DelaymSec(100);
+	  Back();
+     DelaymSec(50);
+     //Soft_Right2();
+     //DelaymSec(50);
 	 if(( ADC_Data[2]<150)&&(sen_dat[1]>190) && (ADC_Data[0]<120))
 	 {
 	   vTaskResume(xforward);
@@ -663,16 +663,16 @@ void IR3_IR4 (void *p)
 {
  while(1)
 {
-UpdateLeftPWM(300);	//Velocity Setting
-UpdateRightPWM(300);	//Velocity Setting
+UpdateLeftPWM(400);	//Velocity Setting
+UpdateRightPWM(400);	//Velocity Setting
 if(( ADC_Data[2]>180) && (sen_dat[1]<180)) //IR 3 and IR 4
    {
      Stop();
 	 vTaskSuspend(xforward);
 	 Back();
-     DelaymSec(100);
+     DelaymSec(50);
      Soft_Left2();
-     DelaymSec(100);
+     DelaymSec(50);
 	 if(( ADC_Data[2]<180)&&(sen_dat[1]>180))
 	 {
 	   vTaskResume(xforward);
@@ -714,6 +714,11 @@ while(1)
 UpdateLeftPWM(300);	
  UpdateRightPWM(300);
  Forward();
+ if((sen_dat[0]<190) || (ADC_Data[0]>170) || (sen_dat[1]<210) || ( ADC_Data[2]>170) || ( sen_dat[2]<170) || (sen_dat[4]<200) || (sen_dat[5]<180) || (sen_dat[5]<180) || (( ADC_Data[2]>180) && (sen_dat[1]<180)) || ((ADC_Data[0]>180) &&(sen_dat[1]<180)) )
+ {
+ Stop();
+ DelaymSec(30);
+ }
  }
 }
 

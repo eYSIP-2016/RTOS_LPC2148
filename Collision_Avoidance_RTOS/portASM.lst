@@ -800,10 +800,10 @@ Symbol: pxCurrentTCB
       At line 56 in file ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\port
 able\RVDS\ARM7_LPC21xx\portmacro.inc
    Uses
-      At line 63 in macro Ë’*!+
+      At line 63 in macro ›-»(.
       at line 83 in file ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\port
 able\RVDS\ARM7_LPC21xx\portASM.s
-      At line 112 in macro (ß*p“*_CONTEXT
+      At line 112 in macro HÆ-êŸ-
       at line 110 in file ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\por
 table\RVDS\ARM7_LPC21xx\portASM.s
 
@@ -814,10 +814,10 @@ Symbol: ulCriticalNesting
       At line 55 in file ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\port
 able\RVDS\ARM7_LPC21xx\portmacro.inc
    Uses
-      At line 67 in macro Ë’*!+
+      At line 67 in macro ›-»(.
       at line 83 in file ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\port
 able\RVDS\ARM7_LPC21xx\portASM.s
-      At line 108 in macro (ß*p“*_CONTEXT
+      At line 108 in macro HÆ-êŸ-
       at line 110 in file ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\por
 table\RVDS\ARM7_LPC21xx\portASM.s
 
