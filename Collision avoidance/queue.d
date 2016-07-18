@@ -1,0 +1,16 @@
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\queue.c
+queue.o: C:\Keil\ARM\RV31\INC\stdlib.h
+queue.o: C:\Keil\ARM\RV31\INC\string.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h
+queue.o: C:\Keil\ARM\RV31\INC\stddef.h
+queue.o: C:\Keil\ARM\RV31\INC\stdint.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h
+queue.o: C:\Keil\ARM\INC\Philips\lpc21xx.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h
+queue.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\queue.h
