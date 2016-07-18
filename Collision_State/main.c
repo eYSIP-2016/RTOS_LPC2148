@@ -5,6 +5,7 @@
 #include "type.h"
 #include "spi.h"
 #include <math.h>
+#include "uart.h"
 /**************Macros*****************/
 
 
@@ -14,7 +15,8 @@
 #define SENSOR_OFF() IO1SET=(1<<16)		//Macro to turn OFF Sensors
 #define SENSOR_ON() IO1CLR=(1<<16)		//Macro to turn ON Sensors 
 /*************************************/
-
+  unsigned char sen_dat1[17];
+  int i=0;
 /*******************************************
 Task handles
 *******************************************/
@@ -721,6 +723,42 @@ UpdateLeftPWM(300);
  }
  }
 }
+void vsend(void *pvparam)
+{  
+ 
+ while(1)
+ {
+  UART1_SendStr(sen_dat1);
+  UART1_SendByte(0x00);
+  UART1_SendByte(0xFF);
+  vTaskDelay(100/portTICK_PERIOD_MS);	   
+  
+ }
+}
+void vcalc(void *pvparam)
+{  
+ 
+ while(1)
+ {
+   sen_dat1[0]=MEGA8_ADCRead(6);		// IR 1
+   sen_dat1[1]=MEGA8_ADCRead(13);	// IR 2
+   sen_dat1[2]=MEGA8_ADCRead(9);		// IR 3
+   sen_dat1[3]=MEGA8_ADCRead(8);		// IR 4
+   sen_dat1[4]=MEGA8_ADCRead(15);	// IR 5
+   sen_dat1[5]=MEGA8_ADCRead(4);	// IR 6
+   sen_dat1[6]=MEGA8_ADCRead(0);	// IR 7
+   sen_dat1[7]=MEGA8_ADCRead(7);	//sharp 1
+   sen_dat1[8]=AD0_Conversion(6);	 //sharp 2
+   sen_dat1[9]=AD1_Conversion(0);	 //sharp 3
+   sen_dat1[10]=AD0_Conversion(7);	 //sharp 4
+   sen_dat1[11]=MEGA8_ADCRead(14);	 //sharp 5
+   sen_dat1[12]=AD1_Conversion(3);	 //WL left
+   sen_dat1[13]=AD0_Conversion(1);	 //WL center
+   sen_dat1[14]=AD0_Conversion(2);	 //WL right
+  	
+   vTaskDelay(100/portTICK_PERIOD_MS);
+ }
+}
 
 void Init_Ports(void)
 {
@@ -739,6 +777,7 @@ void Init_Peripherals(void)
 Init_Sensor_Switch_Pin();
  SPI1_Init();
  Init_PWM();
+ Init_UART1();
 }
 /*****************************************
 SPI Data transmission and reception
@@ -794,6 +833,8 @@ int main()
   xTaskCreate(forward,"forward",configMINIMAL_STACK_SIZE,NULL,tskIDLE_PRIORITY+1,&xforward);
   xTaskCreate(IR2_IR3_IR4,"IR2_IR3_IR4",configMINIMAL_STACK_SIZE,NULL,tskIDLE_PRIORITY+1,&xIR2_IR3_IR4);
   xTaskCreate(lcdprint,"Display",configMINIMAL_STACK_SIZE,NULL,tskIDLE_PRIORITY+1,&xdisplay);
+  xTaskCreate(vcalc,"calc", 300 ,NULL, tskIDLE_PRIORITY + 1, NULL);//Task Creation
+ xTaskCreate(vsend,"send", 300 ,NULL, tskIDLE_PRIORITY + 1, NULL); //Task Creation
 	
    
 	vTaskStartScheduler();  

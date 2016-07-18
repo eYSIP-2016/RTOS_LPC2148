@@ -298,10 +298,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>14</ColumnNumber>
+      <ColumnNumber>17</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>533</TopLine>
-      <CurrentLine>533</CurrentLine>
+      <TopLine>441</TopLine>
+      <CurrentLine>441</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -314,8 +314,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>22</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Fire Bird V LPC2148 2013-05-05\Expirements\14A_GUI_Control_Serial\spi.c</PathWithFileName>
       <FilenameWithoutPath>spi.c</FilenameWithoutPath>
@@ -333,6 +333,20 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\..\Fire Bird V LPC2148 2013-05-05\Expirements\14A_GUI_Control_Serial\Lcd.c</PathWithFileName>
       <FilenameWithoutPath>Lcd.c</FilenameWithoutPath>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>0</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>0</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\uart.h</PathWithFileName>
+      <FilenameWithoutPath>uart.h</FilenameWithoutPath>
     </File>
   </Group>
 
@@ -1681,15 +1695,27 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>14</ColumnNumber>
-          <TopLine>533</TopLine>
-          <CurrentLine>533</CurrentLine>
+          <ColumnNumber>17</ColumnNumber>
+          <TopLine>441</TopLine>
+          <CurrentLine>441</CurrentLine>
         </Doc>
         <Doc>
           <Name>..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h</Name>
           <ColumnNumber>34</ColumnNumber>
           <TopLine>89</TopLine>
           <CurrentLine>89</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>uart.h</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>117</TopLine>
+          <CurrentLine>125</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>..\..\Fire Bird V LPC2148 2013-05-05\Expirements\14A_GUI_Control_Serial\spi.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>22</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

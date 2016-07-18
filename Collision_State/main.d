@@ -17,3 +17,4 @@ main.o: ..\..\..\Downloads\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h
 main.o: C:\Keil\ARM\INC\type.h
 main.o: C:\Keil\ARM\INC\spi.h
 main.o: C:\Keil\ARM\RV31\INC\math.h
+main.o: uart.h
