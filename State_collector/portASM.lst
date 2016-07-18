@@ -799,10 +799,10 @@ Symbol: pxCurrentTCB
       At line 56 in file S:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_L
 PC21xx\portmacro.inc
    Uses
-      At line 63 in macro Ä◊^Hc_
+      At line 63 in macro »◊]ê^
       at line 83 in file S:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_L
 PC21xx\portASM.s
-      At line 112 in macro @©^‘^
+      At line 112 in macro à©]`‘]
       at line 110 in file S:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_
 LPC21xx\portASM.s
 
@@ -813,10 +813,10 @@ Symbol: ulCriticalNesting
       At line 55 in file S:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_L
 PC21xx\portmacro.inc
    Uses
-      At line 67 in macro Ä◊^Hc_
+      At line 67 in macro »◊]ê^
       at line 83 in file S:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_L
 PC21xx\portASM.s
-      At line 108 in macro @©^‘^
+      At line 108 in macro à©]`‘]
       at line 110 in file S:\FreeRTOSv9.0.0\FreeRTOS\Source\portable\RVDS\ARM7_
 LPC21xx\portASM.s
 

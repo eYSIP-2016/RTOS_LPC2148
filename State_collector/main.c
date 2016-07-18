@@ -28,7 +28,7 @@ the values are calculated every 1sec/1000 clock ticks and transmitted every 1 se
 
 #define SENSOR_OFF() IO1SET=(1<<16)		//Macro to turn OFF Sensors
 #define SENSOR_ON() IO1CLR=(1<<16)		//Macro to turn ON Sensors 
-unsigned char sen_dat[19];
+unsigned char sen_dat[17];
 int i=0;
 /*************************************/
 
@@ -87,9 +87,9 @@ void vsend(void *pvparam)
  
  while(1)
  {
-  UART0_SendStr(sen_dat);
-  UART0_SendByte(0x00);	
-  UART0_SendByte(0xFF);
+  UART1_SendStr(sen_dat);
+  UART1_SendByte(0x00);
+  UART1_SendByte(0xFF);
   vTaskDelay(1000);	   
   
  }
@@ -114,7 +114,7 @@ void vcalc(void *pvparam)
    sen_dat[12]=AD1_Conversion(3);	 //WL left
    sen_dat[13]=AD0_Conversion(1);	 //WL center
    sen_dat[14]=AD0_Conversion(2);	 //WL right
-
+  	
    vTaskDelay(1000);
  }
 }		
@@ -144,6 +144,7 @@ void Init_Peripherals(void)
  Init_ADC1();
  Init_PWM();
  Init_UART0();
+ Init_UART1();
  SPI1_Init();
 }
 

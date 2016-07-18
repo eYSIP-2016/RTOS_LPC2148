@@ -22,7 +22,7 @@
 ### ADS-LD Output File: 'state_collector.axf'
 ### ADS-LD Command File: 'state_collector.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'state_collector.lnp', Handle=0x000006D0
+### Creating CmdFile 'state_collector.lnp', Handle=0x00000474
 ### Writing '.lnp' file
 ### ADS-LD Command file 'state_collector.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
