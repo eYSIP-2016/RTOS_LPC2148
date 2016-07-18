@@ -121,6 +121,4 @@ void UART1_SendStr(const unsigned char *str)
   
    }
 
-
 }
-	
