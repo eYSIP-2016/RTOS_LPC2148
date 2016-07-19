@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.24)  19 JUL 2016 02:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.24)  19 JUL 2016 13:36
 entering extended mode
 **./semaphore.tex
 (semaphore.tex
@@ -734,20 +734,139 @@ File: mbox.png Graphic file (type png)
 Package pdftex.def Info: mbox.png used on input line 398.
 (pdftex.def)             Requested size: 341.43306pt x 375.84601pt.
  [24 <./mbox.png>]
-Overfull \hbox (14.82498pt too wide) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+
+ []
+
+(q.c.
+Overfull \hbox (73.62451pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (172.17554pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (60.48438pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][]
+ []
+
+[25]
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (159.0354pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (362.70752pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.63403pt too wide) in paragraph at lines 54--55
+[][][][][][][][][]
+ []
+
+
+Overfull \hbox (145.89526pt too wide) in paragraph at lines 69--70
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[26]
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 72--73
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 73--74
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 75--76
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 77--79
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (277.29663pt too wide) in paragraph at lines 79--81
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (388.9878pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
+
+ []
+
+
+Overfull \hbox (28.72882pt too wide) in paragraph at lines 435--436
+[][][][][][][][][][][][][][][][] 
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
+
+ []
+
+
+Overfull \hbox (2.44855pt too wide) in paragraph at lines 450--451
+[][][][][][][][][][][][][][][][] 
+ []
+
+<q.png, id=104, 173.14688pt x 328.22626pt>
+File: q.png Graphic file (type png)
+ <use q.png>
+Package pdftex.def Info: q.png used on input line 463.
+(pdftex.def)             Requested size: 341.43306pt x 647.3157pt.
+ [28]
+Overfull \vbox (51.51544pt too high) has occurred while \output is active []
+
+
+[29 <./q.png>]
+Overfull \hbox (14.82498pt too wide) in paragraph at lines 468--469
 []\OT1/cmr/m/n/10.95 http://www.rtos.be/2013/05/mutexes-and-semaphores-two-conc
 epts-for-
  []
 
-[25] (semaphore.aux) ) 
+[30] (semaphore.aux) ) 
 Here is how much of TeX's memory you used:
- 2663 strings out of 493634
- 37691 string characters out of 3134423
+ 2713 strings out of 493634
+ 38292 string characters out of 3134423
  136015 words of memory out of 3000000
- 6046 multiletter control sequences out of 15000+200000
+ 6092 multiletter control sequences out of 15000+200000
  9157 words of font info for 32 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 29i,7n,52p,353b,1517s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,7n,52p,371b,1517s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/SUMAKAR/AppData/L
@@ -758,9 +877,9 @@ ts/cm/cmr12.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr17.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SUMAKAR/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on semaphore.pdf (25 pages, 187432 bytes).
+Output written on semaphore.pdf (30 pages, 209649 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 141 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

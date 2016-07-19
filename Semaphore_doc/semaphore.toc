@@ -25,4 +25,8 @@
 \contentsline {section}{\numberline {8}Task Notification}{19}
 \contentsline {subsection}{\numberline {8.1}Code:}{20}
 \contentsline {subsection}{\numberline {8.2}Explanation}{23}
-\contentsline {section}{\numberline {9}References}{25}
+\contentsline {section}{\numberline {9}Queue}{25}
+\contentsline {subsection}{\numberline {9.1}Intro}{25}
+\contentsline {subsection}{\numberline {9.2}Code}{25}
+\contentsline {subsection}{\numberline {9.3}Explanation}{27}
+\contentsline {section}{\numberline {10}References}{30}

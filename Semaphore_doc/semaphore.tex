@@ -396,6 +396,71 @@ xSemaphore = xSemaphoreCreateCounting( 5, 5 );
    \end{itemize}
    
    \includegraphics[width=12cm]{mbox}
+	\newpage
+	\section{Queue}
+	 \subsection{Intro}
+	 In RTOS, inter-process communication is possible. It means that you can communicate between two task and control them on the basis of this communication.\\ But first we need to understand \textbf {what is queue?}\\
+	Consider a dynamic buffer. Dynamic in the sense of memory allocation. We can allocate the size of the buffer as per our requirements. There are two things that we can change, one is the size of each data the buffer can carry and other is the number of data the buffer can send with each data of the size defined by us. this buffer is known as queue.\\
+	
+	\subsection{Code}
+	\lstinputlisting[language=c]{q.c.}
+	
+	\subsection{Explanation}
+	\begin{itemize}
+		\item \textbf{QueueHandle\_t} :A predefined data type used to reference a queue.
+		
+		\begin{lstlisting}
+		QueueHandle_t xQueue= 0;
+		\end{lstlisting}	
+		
+		\item \textbf{xQueueCreate(a,b)}:Creates a queue of 'a' continuous memory locations,where each memory location is of 'b' bytes each.It returns a 'pointer' to the queue which is stored in the queuehandle.
+		
+		\begin{lstlisting}
+		xQueue = xQueueCreate(7,40);
+		\end{lstlisting}
+		
+		\item \textbf{xQueueSend(QueueHandle,data,timeout period)}:This function is used to send data to queue,It has three parameters
+		
+		\begin{enumerate}
+			\item\textbf{QueueHandle}:It gives the address of the queue in which data has to be stored.
+			
+			\item\textbf{Data}:The data which needs to be stored in the queue.
+			
+			\item\textbf{Timeout period}:This specifies the amount of time for which the function waits if the queue is unavailable(i.e data is being sent to queue or queue is full) 
+			\newline		
+		\end{enumerate}
+		
+		\textbf{Return value :}Returns pdTRUE if Data has been sent to Queue else pdFALSE e.g..
+		\begin{lstlisting}
+		if(xQueueSend(xQueue,p,1000) == pdTRUE)
+		...
+		\end{lstlisting}
+	\item \textbf{xQueueReceive(QueueHandle,data,timeout period):}This function is used to receive data from a queue,It has three parameters
+	
+	\begin{enumerate}
+		\item\textbf{QueueHandle}:It gives the address of the queue from which data has to be obtained.
+		
+		\item\textbf{Data}:A variable in which the poped data has to be stored.
+		
+		\item\textbf{Timeout period}:This specifies the maximum amount of time for which the function waits if the queue is unavailable(i.e data is being received by another task or queue is empty) 
+		\newline		
+	\end{enumerate}
+	\textbf{Return value :}Returns pdTRUE if Data has been Received from the Queue, pdFALSE id queue is empty e.g..
+	\begin{lstlisting}
+	if(xQueueReceive(xQueue,rx,1000) == pdTRUE)
+	...
+	\end{lstlisting}
+	
+	\item\textbf{Working of code:}
+	Initially a queue is created which can accomodate 7 elements in which each of them can occupy 40 Bytes.
+	
+	There are 4 tasks which send data to the queue and one task which receives data from the queue.
+	
+	As the tasks are created data is pushed into the queue and the receiving task is resumed which inturn pops the data and prints them through the serial comm port.
+	
+	From the Output screenshots it can be observed how  data pushed 1st is popped out 1st (Queue mechanism).  
+	\end{itemize}
+	\includegraphics[width=12cm]{q}
 	
 	\newpage
 	\section{References}
