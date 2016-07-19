@@ -1,0 +1,1078 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.24)  19 JUL 2016 14:39
+entering extended mode
+**./semaphore.tex
+(semaphore.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
+x.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.
+sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
+s.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.st
+y"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphic
+s.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftex-def\pdfte
+x.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwa
+rerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcm
+ds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listing
+s.sty"
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count89
+\lst@currlwidth=\dimen105
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen106
+\lst@width=\dimen107
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen108
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc
+.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listing
+s.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (semaphore.aux)
+\openout1 = `semaphore.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
+mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen109
+\scratchbox=\box28
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen110
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks17
+)
+\c@lstlisting=\count102
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+ [1
+
+{C:/Users/SUMAKAR/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(semaphore.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+ [2])
+\tf@toc=\write3
+\openout3 = `semaphore.toc'.
+
+ [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 66--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--76
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 105--118
+
+ []
+
+
+Overfull \hbox (44.66809pt too wide) in paragraph at lines 105--118
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Overfull \hbox (40.77417pt too wide) in paragraph at lines 132--133
+[][][][][][][][][][][][][][] 
+ []
+
+[7]
+Overfull \hbox (0.8pt too wide) in paragraph at lines 155--156
+[]\OT1/cmr/m/n/10.95 Same Task can have mul-ti-ple in-stances by vary-ing the p
+ri-or-ity,parameters
+ []
+
+[8]
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
+1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc
+.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+) (rtos_multitasking.c
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 1.
+
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1.
+
+Overfull \hbox (126.18506pt too wide) in paragraph at lines 21--22
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.90479pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (526.95923pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.06396pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (500.67896pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+[9]
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 35--36
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 36--37
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 42--43
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 65--66
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 71--72
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[10] [11]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
+
+Overfull \hbox (139.3252pt too wide) in paragraph at lines 162--163
+[][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[12]
+Overfull \hbox (270.72656pt too wide) in paragraph at lines 164--165
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (290.43677pt too wide) in paragraph at lines 165--166
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (297.00684pt too wide) in paragraph at lines 166--167
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (172.17554pt too wide) in paragraph at lines 167--170
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 207--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
+
+ []
+
+[14] [15] (bin.c.
+Overfull \hbox (73.62451pt too wide) in paragraph at lines 9--11
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (159.0354pt too wide) in paragraph at lines 12--13
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.77417pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (139.3252pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.77417pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][] 
+ []
+
+[16]
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 54--55
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (251.01636pt too wide) in paragraph at lines 63--64
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (218.16602pt too wide) in paragraph at lines 64--65
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (375.84766pt too wide) in paragraph at lines 65--67
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [17]
+Underfull \hbox (badness 10000) in paragraph at lines 273--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--289
+
+ []
+
+
+Overfull \hbox (17.42874pt too wide) in paragraph at lines 273--289
+\OT1/cmr/m/n/10.95 back func-tion(vTaskDelay re-stricts for-ward func-tion),The
+ con-trol[]switcher
+ []
+
+
+Overfull \hbox (16.14815pt too wide) in paragraph at lines 273--289
+\OT1/cmr/m/n/10.95 func-tion is sus-pended for 1200 clock counts and Gives away
+ the semaphore. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--289
+
+ []
+
+<bin.png, id=63, 181.42781pt x 109.91063pt>
+File: bin.png Graphic file (type png)
+ <use bin.png>
+Package pdftex.def Info: bin.png used on input line 292.
+(pdftex.def)             Requested size: 284.52756pt x 172.38896pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--293
+
+ []
+
+[18 <./bin.png>] (mut.c.
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 7--9
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 9--11
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (73.62451pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (191.88574pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (86.76465pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (172.17554pt too wide) in paragraph at lines 24--26
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (434.97827pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.90479pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (224.73608pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][][]
+ []
+
+[19]
+Overfull \hbox (132.75513pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (172.17554pt too wide) in paragraph at lines 43--45
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (336.42725pt too wide) in paragraph at lines 45--46
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (132.75513pt too wide) in paragraph at lines 58--60
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (251.01636pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (218.16602pt too wide) in paragraph at lines 61--63
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [20]
+Underfull \hbox (badness 10000) in paragraph at lines 318--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--335
+
+ []
+
+<mut.png, id=76, 148.30406pt x 98.61844pt>
+File: mut.png Graphic file (type png)
+ <use mut.png>
+Package pdftex.def Info: mut.png used on input line 338.
+(pdftex.def)             Requested size: 241.84842pt x 160.82936pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--339
+
+ []
+
+[21 <./mut.png>] (cont.c.
+Overfull \hbox (132.75513pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 11--13
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (474.39868pt too wide) in paragraph at lines 14--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (362.70752pt too wide) in paragraph at lines 19--20
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (388.9878pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (126.18506pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 39--40
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[22]
+Overfull \hbox (323.28711pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (7.92383pt too wide) in paragraph at lines 45--47
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (211.59595pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (53.9143pt too wide) in paragraph at lines 48--50
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (119.61499pt too wide) in paragraph at lines 53--55
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.63403pt too wide) in paragraph at lines 71--72
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[23]
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 91--92
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (218.16602pt too wide) in paragraph at lines 105--106
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (218.16602pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (218.16602pt too wide) in paragraph at lines 107--108
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (218.16602pt too wide) in paragraph at lines 108--109
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (218.16602pt too wide) in paragraph at lines 109--111
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 111--112
+[][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 115--117
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [24]
+Underfull \hbox (badness 10000) in paragraph at lines 366--369
+
+ []
+
+
+Overfull \hbox (9.01862pt too wide) in paragraph at lines 371--372
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--384
+
+ []
+
+[25] <cont.png, id=94, 209.28188pt x 328.22626pt>
+File: cont.png Graphic file (type png)
+ <use cont.png>
+Package pdftex.def Info: cont.png used on input line 391.
+(pdftex.def)             Requested size: 341.43306pt x 535.48486pt.
+
+Overfull \hbox (8.80812pt too wide) in paragraph at lines 389--392
+[] 
+ []
+
+[26 <./cont.png>]
+Overfull \hbox (40.8313pt too wide) in paragraph at lines 397--398
+\OT1/cmr/m/n/10.95 There oc-curs in-stances when tasks needs to com-mu-ni-cate 
+with each other.Semaphores
+ []
+
+[27] (mbox.c.
+Overfull \hbox (106.47485pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 21--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 24--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.77417pt too wide) in paragraph at lines 26--27
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 27--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[28] [29]
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 103--104
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (53.9143pt too wide) in paragraph at lines 110--112
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (283.8667pt too wide) in paragraph at lines 112--113
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (283.8667pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (283.8667pt too wide) in paragraph at lines 114--115
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (283.8667pt too wide) in paragraph at lines 115--116
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (257.58643pt too wide) in paragraph at lines 116--121
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 121--123
+[][][][][][][][][][][][] 
+ []
+
+) [30]
+Underfull \hbox (badness 10000) in paragraph at lines 421--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--424
+
+ []
+
+
+Overfull \hbox (15.58868pt too wide) in paragraph at lines 428--429
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (48.43903pt too wide) in paragraph at lines 429--430
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (61.57916pt too wide) in paragraph at lines 458--459
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (153.56012pt too wide) in paragraph at lines 459--460
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.86285pt too wide) in paragraph at lines 467--468
+[]\OT1/cmr/bx/n/10.95 pulNotificationValue\OT1/cmr/m/n/10.95 :The No-ti-fi-ca-t
+ion value be-fore exit is taken
+ []
+
+[31] <mbox.png, id=115, 224.33812pt x 246.9225pt>
+File: mbox.png Graphic file (type png)
+ <use mbox.png>
+Package pdftex.def Info: mbox.png used on input line 479.
+(pdftex.def)             Requested size: 341.43306pt x 375.84601pt.
+ [32 <./mbox.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+(q.c.
+Overfull \hbox (73.62451pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (172.17554pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (60.48438pt too wide) in paragraph at lines 27--28
+[][][][][][][][][][][][][][][][][][]
+ []
+
+[33]
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (159.0354pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (362.70752pt too wide) in paragraph at lines 50--51
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (80.19458pt too wide) in paragraph at lines 52--53
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (27.63403pt too wide) in paragraph at lines 54--55
+[][][][][][][][][]
+ []
+
+
+Overfull \hbox (145.89526pt too wide) in paragraph at lines 69--70
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[34]
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 72--73
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 73--74
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 75--76
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 76--77
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (421.83813pt too wide) in paragraph at lines 77--79
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (277.29663pt too wide) in paragraph at lines 79--81
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (388.9878pt too wide) in paragraph at lines 83--84
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+
+ []
+
+
+Overfull \hbox (28.72882pt too wide) in paragraph at lines 516--517
+[][][][][][][][][][][][][][][][] 
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 526--528
+
+ []
+
+
+Overfull \hbox (2.44855pt too wide) in paragraph at lines 531--532
+[][][][][][][][][][][][][][][][] 
+ []
+
+<q.png, id=129, 173.14688pt x 328.22626pt>
+File: q.png Graphic file (type png)
+ <use q.png>
+Package pdftex.def Info: q.png used on input line 544.
+(pdftex.def)             Requested size: 341.43306pt x 647.3157pt.
+ [36]
+Overfull \vbox (51.51544pt too high) has occurred while \output is active []
+
+
+[37 <./q.png>] (statecol.c.
+Overfull \hbox (132.75513pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (126.18506pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.90479pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.47485pt too wide) in paragraph at lines 25--27
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[38]
+Overfull \hbox (264.1565pt too wide) in paragraph at lines 33--34
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[39]
+Overfull \hbox (172.17554pt too wide) in paragraph at lines 89--90
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (172.17554pt too wide) in paragraph at lines 90--91
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (178.7456pt too wide) in paragraph at lines 91--92
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [40]
+("C:\Users\SUMAKAR\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
+1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (serialcomm.py.
+Overfull \hbox (21.06396pt too wide) in paragraph at lines 5--6
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (205.02588pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (211.59595pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) <serialcomm.png, id=147, 527.72156pt x 180.675pt>
+File: serialcomm.png Graphic file (type png)
+ <use serialcomm.png>
+Package pdftex.def Info: serialcomm.png used on input line 559.
+(pdftex.def)             Requested size: 398.33858pt x 136.37708pt.
+
+Overfull \hbox (38.33858pt too wide) in paragraph at lines 559--560
+[] 
+ []
+
+[41 <./serialcomm.png>]
+Overfull \hbox (14.82498pt too wide) in paragraph at lines 564--565
+[]\OT1/cmr/m/n/10.95 http://www.rtos.be/2013/05/mutexes-and-semaphores-two-conc
+epts-for-
+ []
+
+[42] (semaphore.aux) ) 
+Here is how much of TeX's memory you used:
+ 3027 strings out of 493634
+ 42214 string characters out of 3134423
+ 137065 words of memory out of 3000000
+ 6393 multiletter control sequences out of 15000+200000
+ 9157 words of font info for 32 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 29i,7n,52p,399b,1517s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/SUMAKAR/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/SU
+MAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr17.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/SUMAKAR/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on semaphore.pdf (42 pages, 250879 bytes).
+PDF statistics:
+ 183 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
