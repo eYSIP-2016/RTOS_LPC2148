@@ -48,4 +48,7 @@
 \contentsline {subsubsection}{State collection Code}{49}{subsection.0.14.1}
 \contentsline {subsubsection}{Python script}{52}{lstnumber.-22.95}
 \contentsline {subsubsection}{Sample output}{52}{lstnumber.-23.29}
-\contentsline {section}{\numberline {0.15}References}{53}{section.0.15}
+\contentsline {section}{\numberline {0.15}Collision Avoidance}{53}{section.0.15}
+\contentsline {subsection}{\numberline {0.15.1}Theory and Description}{53}{subsection.0.15.1}
+\contentsline {subsection}{\numberline {0.15.2}Experiment}{55}{subsection.0.15.2}
+\contentsline {section}{\numberline {0.16}References}{69}{section.0.16}

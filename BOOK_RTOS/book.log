@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.21)  21 JUL 2016 20:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.7.21)  22 JUL 2016 03:13
 entering extended mode
 **./book.tex
 (book.tex
@@ -1085,7 +1085,7 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 Package marginnote Info: \pdfoutput not 0 or unimportant and
 (marginnote)             \pdflastxpos or \lastxpos available.
 (marginnote)             Extended position detection mode activated.
- <logo.png, id=230, 123.46124pt x 131.49126pt>
+ <logo.png, id=242, 123.46124pt x 131.49126pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 83.
@@ -1184,7 +1184,7 @@ File: logo.png Graphic file (type png)
 Package pdftex.def Info: logo.png used on input line 161.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [7]
-<Capture.PNG, id=332, 569.12625pt x 372.64218pt>
+<Capture.PNG, id=347, 569.12625pt x 372.64218pt>
 File: Capture.PNG Graphic file (type png)
  <use Capture.PNG>
 Package pdftex.def Info: Capture.PNG used on input line 195.
@@ -1193,13 +1193,13 @@ Package pdftex.def Info: Capture.PNG used on input line 195.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<c++.PNG, id=334, 497.60907pt x 368.87813pt>
+<c++.PNG, id=349, 497.60907pt x 368.87813pt>
 File: c++.PNG Graphic file (type png)
  <use c++.PNG>
 Package pdftex.def Info: c++.PNG used on input line 201.
 (pdftex.def)             Requested size: 284.52847pt x 170.71602pt.
 
-<c++foldersetup.PNG, id=335, 532.99126pt x 370.38374pt>
+<c++foldersetup.PNG, id=350, 532.99126pt x 370.38374pt>
 File: c++foldersetup.PNG Graphic file (type png)
 
 <use c++foldersetup.PNG>
@@ -1226,13 +1226,13 @@ File: logo.png Graphic file (type png)
 Package pdftex.def Info: logo.png used on input line 209.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [9 <./Capture.PNG> <./c++.PNG>]
-<asm.PNG, id=359, 517.18219pt x 385.44pt>
+<asm.PNG, id=374, 517.18219pt x 385.44pt>
 File: asm.PNG Graphic file (type png)
  <use asm.PNG>
 Package pdftex.def Info: asm.PNG used on input line 212.
 (pdftex.def)             Requested size: 284.53789pt x 170.71158pt.
 
-<asmpath.PNG, id=360, 512.66531pt x 374.14781pt>
+<asmpath.PNG, id=375, 512.66531pt x 374.14781pt>
 File: asmpath.PNG Graphic file (type png)
  <use asmpath.PNG>
 Package pdftex.def Info: asmpath.PNG used on input line 217.
@@ -1250,7 +1250,7 @@ File: logo.png Graphic file (type png)
 Package pdftex.def Info: logo.png used on input line 220.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [10 <./c++foldersetup.PNG> <./asm.PNG>]
-<linker.PNG, id=370, 497.60907pt x 368.87813pt>
+<linker.PNG, id=385, 497.60907pt x 368.87813pt>
 File: linker.PNG Graphic file (type png)
  <use linker.PNG>
 Package pdftex.def Info: linker.PNG used on input line 224.
@@ -1269,7 +1269,7 @@ File: logo.png Graphic file (type png)
 Package pdftex.def Info: logo.png used on input line 232.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [11 <./asmpath.PNG> <./linker.PNG>]
-<libraries.PNG, id=380, 188.95593pt x 307.90031pt>
+<libraries.PNG, id=395, 188.95593pt x 307.90031pt>
 File: libraries.PNG Graphic file (type png)
  <use libraries.PNG>
 Package pdftex.def Info: libraries.PNG used on input line 238.
@@ -1671,7 +1671,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--432
 
  []
 
-<bin.png, id=702, 181.42781pt x 109.91063pt>
+<bin.png, id=717, 181.42781pt x 109.91063pt>
 File: bin.png Graphic file (type png)
  <use bin.png>
 Package pdftex.def Info: bin.png used on input line 435.
@@ -1830,7 +1830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--478
 
  []
 
-<mut.png, id=791, 148.30406pt x 98.61844pt>
+<mut.png, id=806, 148.30406pt x 98.61844pt>
 File: mut.png Graphic file (type png)
  <use mut.png>
 Package pdftex.def Info: mut.png used on input line 481.
@@ -2013,7 +2013,7 @@ File: logo.png Graphic file (type png)
 Package pdftex.def Info: logo.png used on input line 531.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [31]
-<cont.png, id=950, 209.28188pt x 328.22626pt>
+<cont.png, id=965, 209.28188pt x 328.22626pt>
 File: cont.png Graphic file (type png)
  <use cont.png>
 Package pdftex.def Info: cont.png used on input line 534.
@@ -2186,7 +2186,7 @@ File: logo.png Graphic file (type png)
 Package pdftex.def Info: logo.png used on input line 620.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [37]
-<mbox.png, id=1120, 224.33812pt x 246.9225pt>
+<mbox.png, id=1135, 224.33812pt x 246.9225pt>
 File: mbox.png Graphic file (type png)
  <use mbox.png>
 Package pdftex.def Info: mbox.png used on input line 622.
@@ -2334,7 +2334,7 @@ Overfull \hbox (2.44855pt too wide) in paragraph at lines 674--675
 [][][][][][][][][][][][][][][][][] 
  []
 
-<q.png, id=1238, 173.14688pt x 328.22626pt>
+<q.png, id=1253, 173.14688pt x 328.22626pt>
 File: q.png Graphic file (type png)
  <use q.png>
 Package pdftex.def Info: q.png used on input line 687.
@@ -2583,7 +2583,7 @@ Overfull \hbox (211.59595pt too wide) in paragraph at lines 17--18
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) <serialcomm.png, id=1592, 527.72156pt x 180.675pt>
+) <serialcomm.png, id=1607, 527.72156pt x 180.675pt>
 File: serialcomm.png Graphic file (type png)
  <use serialcomm.png>
 Package pdftex.def Info: serialcomm.png used on input line 723.
@@ -2593,43 +2593,457 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 723--724
 [] 
  []
 
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 726.
-(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
-File: logo.png Graphic file (type png)
- <use logo.png>
-Package pdftex.def Info: logo.png used on input line 726.
-(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [52 <./serialcomm.png>]
-Overfull \hbox (14.82498pt too wide) in paragraph at lines 730--731
-[]\OT1/cmr/m/n/10.95 http://www.rtos.be/2013/05/mutexes-and-semaphores-two-conc
-epts-for-
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
+
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 737.
+Package pdftex.def Info: logo.png used on input line 728.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 737.
+Package pdftex.def Info: logo.png used on input line 728.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [53]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 737.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 737.
+ [52 <./serialcomm.png>]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 728.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 728.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [53] <SPI.PNG, id=1649, 350.81062pt x 123.46124pt>
+File: SPI.PNG Graphic file (type png)
+
+<use SPI.PNG>
+Package pdftex.def Info: SPI.PNG used on input line 732.
+(pdftex.def)             Requested size: 284.5458pt x 142.2713pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 736--738
+
+ []
+
+
+Overfull \hbox (3.23344pt too wide) in paragraph at lines 739--740
+[]\OT1/cmr/m/n/10.95 Master puts data on MOSI(Master Out / Slave In) line with 
+clock(SCLK),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+<multiplespi.PNG, id=1650, 514.92375pt x 248.42813pt>
+File: multiplespi.PNG Graphic file (type png)
+ <use multiplespi.PNG>
+Package pdftex.def Info: multiplespi.PNG used on input line 743.
+(pdftex.def)             Requested size: 284.52892pt x 142.26508pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 746.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 746.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [54 <./SPI.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
+
+ []
+
+(coli.c
+Overfull \hbox (132.75513pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (126.18506pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (434.97827pt too wide) in paragraph at lines 22--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 28.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 28.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [55 <./multiplespi.PNG>]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 72.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 72.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [56]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 116.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 116.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [57]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 160.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 160.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [58]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 204.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 204.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [59]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 248.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 248.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [60]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 292.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 292.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [61]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 336.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 336.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [62]
+Overfull \hbox (1.35376pt too wide) in paragraph at lines 361--362
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 380.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 380.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [63]
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 383--384
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.90479pt too wide) in paragraph at lines 391--392
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.4939pt too wide) in paragraph at lines 405--406
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 424.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 424.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [64]
+Overfull \hbox (1703.00146pt too wide) in paragraph at lines 454--455
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][] 
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 470.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 470.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [65]
+Overfull \hbox (99.90479pt too wide) in paragraph at lines 489--490
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.47485pt too wide) in paragraph at lines 496--498
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 512.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 512.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [66]
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 522--523
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 523--524
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 524--525
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 525--526
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 526--527
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 527--528
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 528--529
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (165.60547pt too wide) in paragraph at lines 529--530
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (244.44629pt too wide) in paragraph at lines 530--531
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (244.44629pt too wide) in paragraph at lines 531--532
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (244.44629pt too wide) in paragraph at lines 532--533
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (323.28711pt too wide) in paragraph at lines 533--534
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (251.01636pt too wide) in paragraph at lines 534--537
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 750.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 750.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [67]
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 754.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 754.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [68]
+Overfull \hbox (250.05576pt too wide) in paragraph at lines 768--769
+[]\OT1/cmr/m/n/10.95 Timer:https://d1b10bmlvqabco.cloudfront.net/attach/io19jz7
+pw8d4qk/hxg3z49l9je2dc/ipft11xb342g/Timer[]interrupt.pdf 
+ []
+
+
+Overfull \hbox (48.52672pt too wide) in paragraph at lines 770--771
+[]\OT1/cmr/m/n/10.95 ucos:http://www.soe.uoguelph.ca/webfiles/engg4420/uCOS-II%
+20The%20Real-
+ []
+
+
+Overfull \hbox (65.32896pt too wide) in paragraph at lines 772--773
+[]\OT1/cmr/m/n/10.95 Datasheet:http://www.keil.com/dd/docs/datashts/philips/lpc
+2141[]42[]44[]46[]48.pdf 
+ []
+
+
+Overfull \hbox (68.78424pt too wide) in paragraph at lines 774--775
+[]\OT1/cmr/m/n/10.95 Rtos ba-sic:http://www.cs.sfu.ca/CourseCentral/300/oneill/
+Resources/Segment7.pdf 
+ []
+
+
+Overfull \hbox (36.31635pt too wide) in paragraph at lines 777--778
+[]\OT1/cmr/m/n/10.95 ARM port-ing:http://www.nxp.com/documents/selection[]guide
+/75016983.pdf 
+ []
+
+
+Overfull \hbox (183.36531pt too wide) in paragraph at lines 778--780
+[]\OT1/cmr/bx/n/10.95 BOOK : \OT1/cmr/m/n/10.95 http://www.profdong.com/elc4438
+[]spring2016/USINGTHEFREERTOSREALTIMEKERNEL.pdf 
+ []
+
+
+Overfull \hbox (27.3263pt too wide) in paragraph at lines 782--783
+[]\OT1/cmr/m/n/10.95 https://www.pantechsolutions.net/microcontroller-boards/ua
+rt-interfacing-
+ []
+
+
+Overfull \hbox (14.82498pt too wide) in paragraph at lines 783--784
+[]\OT1/cmr/m/n/10.95 http://www.rtos.be/2013/05/mutexes-and-semaphores-two-conc
+epts-for-
+ []
+
+
+Overfull \hbox (17.47742pt too wide) in paragraph at lines 785--786
+[]\OT1/cmr/m/n/10.95 http://www.keil.com/dd/docs/datashts/philips/user[]manual[
+]lpc214x.pdf 
+ []
+
+
+Overfull \hbox (42.75375pt too wide) in paragraph at lines 787--788
+[]\OT1/cmr/m/n/10.95 http://alumni.cs.ucr.edu/ ami-tra/s-d-card/Ad-di-tion-al/s
+-d-card[]appnote[]foust.pdf 
+ []
+
+
+Overfull \hbox (25.98796pt too wide) in paragraph at lines 790--791
+[]\OT1/cmr/m/n/10.95 https://www.element14.com/community/docs/DOC-61511/l/arm-l
+pc2148-
+ []
+
+
+Overfull \hbox (14.03423pt too wide) in paragraph at lines 795--796
+[]\OT1/cmr/m/n/10.95 http://embeddedprogrammer.blogspot.in/2012/07/hacking-ov76
+70-
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 798.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 798.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [69]
+Overfull \hbox (38.18506pt too wide) in paragraph at lines 803--804
+[]\OT1/cmr/m/n/10.95 http://www.keil.com/forum/15398/usb-hid-mouse-driver-using
+-lpc2148/ 
+ []
+
+
+Overfull \hbox (0.85167pt too wide) in paragraph at lines 804--805
+[]\OT1/cmr/m/n/10.95 http://www.nxp.com/documents/application[]note/AN10736.pdf
+ 
+ []
+
+
+Overfull \hbox (98.34932pt too wide) in paragraph at lines 812--813
+[]\OT1/cmr/m/n/10.95 http://www.datasheetarchive.com/dlmain/Datasheets-NXP/DSAN
+XP010006749.pdf 
+ []
+
+
+Overfull \hbox (218.13739pt too wide) in paragraph at lines 822--824
+[]\OT1/cmr/bx/n/10.95 Wifi mod-ule \OT1/cmr/m/n/10.95 https://www.pantechsoluti
+ons.net/media/k2/attachments/Wi[]Fi[]Interfacing[]With[]ARM[]Primer.pdf 
+ []
+
+
+Overfull \hbox (145.23033pt too wide) in paragraph at lines 825--827
+[]\OT1/cmr/bx/n/10.95 Pyserial \OT1/cmr/m/n/10.95 https://github.com/gskielian/
+Arduino-DataLogging/blob/master/PySerial/README.md 
+ []
+
+
+Overfull \hbox (18.12404pt too wide) in paragraph at lines 828--830
+[]\OT1/cmr/bx/n/10.95 RPI \OT1/cmr/m/n/10.95 https://www.raspberrypi.org/forums
+/viewtopic.php?f=26&t=21610 
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 833.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 833.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [70]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 833.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 833.
  (book.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 737.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 737.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 833.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 833.
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: B2BC7F0B519F6388E60FD9229069900C;3033.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 737.
+(rerunfilecheck)             Checksum: 5E95B1DF1E8A480414FC32A4901C80B9;3238.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 833.
  ) 
 Here is how much of TeX's memory you used:
- 31796 strings out of 493334
- 632985 string characters out of 3129356
- 730349 words of memory out of 3000000
- 33697 multiletter control sequences out of 15000+200000
+ 32523 strings out of 493334
+ 644753 string characters out of 3129356
+ 736432 words of memory out of 3000000
+ 33860 multiletter control sequences out of 15000+200000
  10675 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,16n,101p,10545b,2179s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2643,9 +3057,9 @@ Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr17.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Users/SUMAKAR/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on book.pdf (53 pages, 600879 bytes).
+Output written on book.pdf (70 pages, 831109 bytes).
 PDF statistics:
- 1902 PDF objects out of 2073 (max. 8388607)
- 1154 named destinations out of 1200 (max. 500000)
- 603 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2660 PDF objects out of 2984 (max. 8388607)
+ 1713 named destinations out of 1728 (max. 500000)
+ 637 words of extra memory for PDF output out of 10000 (max. 10000000)
 

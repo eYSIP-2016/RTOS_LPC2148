@@ -722,18 +722,114 @@ xSemaphore = xSemaphoreCreateCounting( 5, 5 );
 	\subsubsection{Sample output}
 	\includegraphics[width=14cm]{serialcomm}
 	
+	\section{Collision Avoidance}
+	\subsection{Theory and Description}
+	In this section we will study about using all the IR that are connected to master and the slaves of Firebird V LPC2148. There are two methods to setup communication between a master and a slave viz. I2C(pronounced as I squared C) and SPI(Serial Peripheral Interface). In LPC2148 the master and slave are connected through SPI communication. There are two SPI's available in LPC2148 viz. SPI0 and SPI1. Here the master and slave1 are connected through SPI1 and the two slaves are communicating with each other through UART.\\
+	\newpage
+	\textbf{SPI COMMUNICATION:}\\
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=10cm,height=5cm]{SPI.PNG}
+		\caption{ONE MASTER AND SLAVE}
+	\end{figure}
+	
+	In SPI communication master always initiates the communication. It generates the clock signal to initialize the communication. There is a slave select/chip select line which goes low in order to select a particular slave. Because in SPI communication there can be multiple slaves but there is only one master to control them.\\
+	SPI uses separate lines for data and a clock that keeps both sides in perfect synchronization. The clock is an oscillating signal that tells the receiver exactly when to sample the bits on the data line. This could be the rising  or falling edge of the clock signal.\\ 
+	
+	Master puts data on MOSI(Master Out / Slave In) line with clock(SCLK), When the receiver detects the rising edge, it will immediately look at the data line to read the next bit.\\ 
+	
+	When data is sent from the master to a slave, it’s sent on a data line called MOSI(Master Out / Slave In). If the slave needs to send a response back to the master,  slave will put the data onto a third data line called MISO(Master In / Slave Out) and master continue to generate clock. \begin{figure}[h]
+		\centering
+		\includegraphics[width=10cm,height=5cm]{multiplespi.PNG}
+		\caption{ONE MASTER MULTIPLE SLAVES}
+	\end{figure}
+	\newpage
+	\subsection{Experiment}
+	Following is the code for collision avoidance:\\
+	\lstinputlisting[language=C]{coli.c}
+	\newpage
+	In this code there are total 13 tasks. Out of those one is especially for forward motion and the other is for receiving the data from the slave and assigning it to a particular variable. There are 8 tasks in the code each of them is for a particular IR. In that task it determines the movement of the robot once it encounters any obstacles. For eg: consider IR 3 which is the front sharp sensor. There can be 3 possibilities when it faces an obstacle. It can go left or right or go back. In the task of "IR3" first that task will check for sensor 5 if there is no obstacle the it will turn right. Suppose if there are some obstacles there too then it will turn left. And if that is also blocked then it will just go back. Similarly, for each and every sensor there are such cases. There is a task called as " lcdprint" that will store the values of the sensors. In order to remove some of the blind spots (like the space between the two sensors) some more tasks are created like 'IR2-IR3' and 'IR3-IR4' which evaluates the obstacles for that spaces. There is a task that will evaluate obstacles in certain depth like the corner of a square. It is represented by 'IR2-IR3-I4' which considers the obstacles detected by all the three sensors and evaluates accordingly and adjusts the motion of the robot.\\
+	This is the working of the robot.
 	
 \newpage
 
 	\section{References}
-	\begin{enumerate}
-	\item  http://www.rtos.be/2013/05/mutexes-and-semaphores-two-concepts-for-two-different-use-cases/
+	%\begin{enumerate}
+	%\item  http://www.rtos.be/2013/05/mutexes-and-semaphores-two-concepts-for-two-different-use-cases/
 	
-	\item http://www.ocfreaks.com/cat/embedded/lpc2148-tutorials/
-	\item http://www.freertos.org/Inter-Task-Communication.html
-	\item http://tinymicros.com/
-	\item http://www.profdong.com/elc4438\_spring2016/\\USINGTHEFREERTOSREALTIMEKERNEL.pdf
-	\end{enumerate}	
+	%\item http://www.ocfreaks.com/cat/embedded/lpc2148-tutorials/
+	%\item http://www.freertos.org/Inter-Task-Communication.html
+	%\item http://tinymicros.com/
+	%\item http://www.profdong.com/elc4438\_spring2016/\\USINGTHEFREERTOSREALTIMEKERNEL.pdf
+	%\end{enumerate}	
+	
+	\begin{itemize}
+		\item http://tinymicros.com/
+		\item Timer:https://d1b10bmlvqabco.cloudfront.net/attach/io19jz7pw8d4qk/hxg3z49l9je2dc/ipft11xb342g/Timer\_interrupt.pdf
+		
+		\item ucos:http://www.soe.uoguelph.ca/webfiles/engg4420/uCOS-II\%20The\%20Real-Time\%20Kernel.pdf
+		
+		\item Datasheet:http://www.keil.com/dd/docs/datashts/philips/lpc2141\_42\_44\_46\_48.pdf
+		\item Which to choose:http://www.edaboard.com/thread72908.html
+		\item Rtos basic:http://www.cs.sfu.ca/CourseCentral/300/oneill/Resources/Segment7.pdf
+		\item Git already done:https://github.com/selste/openDrive
+		\item Keil kernel:http://www.keil.com/rl-arm/kernel.asp
+		\item ARM porting:http://www.nxp.com/documents/selection\_guide/75016983.pdf
+		\item \textbf{BOOK :}
+		http://www.profdong.com/elc4438\_spring2016/USINGTHEFREERTOSREALTIMEKERNEL.pdf
+		\item http://www.ocfreaks.com/lpc2148-uart-programming-tutorial/
+		\item http://www.ocfreaks.com/cat/embedded/lpc2148-tutorials/
+		\item https://www.pantechsolutions.net/microcontroller-boards/uart-interfacing-with-lpc2148-arm7-primer
+		\item http://www.rtos.be/2013/05/mutexes-and-semaphores-two-concepts-for-two-different-use-cases/
+		\item https://sites.google.com/site/rtosmifmim/home
+		\item http://www.keil.com/dd/docs/datashts/philips/user\_manual\_lpc214x.pdf
+		\item https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu
+		\item http://alumni.cs.ucr.edu/~amitra/sdcard/Additional/sdcard\_appnote\_foust.pdf
+		\item https://www.youtube.com/watch?v=FsHVBxXo45Y
+		\item http://www.nxp.com/documents/application\_note/AN10736.pdf (VI)
+		\item https://www.element14.com/community/docs/DOC-61511/l/arm-lpc2148-usb-hid-human-interface-device-example
+		\item https://www.youtube.com/playlist?list=PL0E131A78ABFBFDD0
+		
+		\item \textbf{Camera}
+		\begin{itemize}
+			\item	http://embeddedprogrammer.blogspot.in/2012/07/hacking-ov7670-camera-module-sccb-cheat.html
+			\item http://forum.arduino.cc/index.php?topic=125767.0
+			\item	http://forum.arduino.cc/index.php/topic,159557.0.html 
+		\end{itemize}
+		
+		\item \textbf{USB}
+		\begin{itemize}
+			\item	http://www.keil.com/forum/18912/usb-interface-with-lpc2148/
+			\item	http://www.keil.com/forum/15398/usb-hid-mouse-driver-using-lpc2148/
+			\item	http://www.nxp.com/documents/application\_note/AN10736.pdf
+			\item	https://www.sparkfun.com/tutorials/94
+			\item	https://community.arm.com/thread/6323
+			
+		\end{itemize}
+		
+		\item \textbf{SPI}
+		\begin{itemize}
+			\item http://www.datasheetarchive.com/dlmain/Datasheets-NXP/DSANXP010006749.pdf
+			
+			%\item http://siwawi.bauing.uni-kl.de/avr\_projects/arm\_projects/arm\_memcards/#chanfat\_lpc2k\_spi
+		\end{itemize}
+		
+		
+		
+		\item \textbf{Sharp sensor Equation :}
+		http://ediy.com.my/blog/item/92-sharp-gp2y0a21-ir-distance-sensors
+		
+		\item \textbf{Wifi module}
+		https://www.pantechsolutions.net/media/k2/attachments/Wi\_Fi\_Interfacing\_With\_ARM\_Primer.pdf
+		
+		\item \textbf{Pyserial}
+		https://github.com/gskielian/Arduino-DataLogging/blob/master/PySerial/README.md
+		
+		\item \textbf{RPI}
+		https://www.raspberrypi.org/forums/viewtopic.php?f=26\&t=21610
+		
+	\end{itemize}
+	
 	\end{document}
 
 
