@@ -1,12 +1,82 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper]{book}
 
 \usepackage{graphicx}
 \usepackage{listings}
-\title{Semaphore using FreeRTOS on LPC2148}
-
+\usepackage{float}
+\title{An Introductory Guide to FreeRTOS on LPC2148}
+\usepackage{graphicx}
 
 \author{e-Yantra Team}
 \date{\today}
+
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{graphics}
+%packagr for hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+
+\urlstyle{same}
+%use of package fancy header
+\usepackage{fancyhdr}
+\setlength\headheight{26pt}
+\fancyhf{}
+%\rhead{\includegraphics[width=1cm]{logo}}
+\lhead{\rightmark}
+\rhead{\includegraphics[width=1cm]{logo}}
+\fancyfoot[RE, RO]{\thepage}
+\fancyfoot[CE, CO]{\href{http://www.e-yantra.org}{www.e-yantra.org}}
+
+\pagestyle{fancy}
+
+%use of package for section title formatting
+\usepackage{titlesec}
+\titleformat{\chapter}
+{\Large\bfseries} % format
+{}                % label
+{0pt}             % sep
+{\huge}           % before-code
+
+%use of package tcolorbox for colorful textbox
+\usepackage[most]{tcolorbox}
+\tcbset{colback=cyan!5!white,colframe=cyan!75!black,halign title = flush center}
+
+\newtcolorbox{mybox}[1]{colback=cyan!5!white,
+	colframe=cyan!75!black,fonttitle=\bfseries,
+	title=\textbf{\Large{#1}}}
+
+%use of package marginnote for notes in margin
+\usepackage{marginnote}
+
+%use of packgage watermark for pages
+%\usepackage{draftwatermark}
+%\SetWatermarkText{\includegraphics{logo}}
+\usepackage[scale=2,opacity=0.1,angle=0]{background}
+\backgroundsetup{
+	contents={\includegraphics{logo}}
+}
+
+%use of newcommand for keywords color
+\usepackage{xcolor}
+\newcommand{\keyword}[1]{\textcolor{red}{\textbf{#1}}}
+
+%package for inserting pictures
+\usepackage{graphicx}
+
+%package for highlighting
+\usepackage{color,soul}
+
+%new command for table
+\newcommand{\head}[1]{\textnormal{\textbf{#1}}}
+
 
 \begin{document}
 	\maketitle
@@ -98,7 +168,80 @@
 	\item FireBird V (LPC2148)
 \end{enumerate}
 
+\section{Setting up the environment}
 
+\subsection{Installing the softwares}
+There are two softwares that we need to install before proceeding.
+\begin{itemize}
+	\item Keil uVision4 IDE.
+	\item Flash Magic.
+\end{itemize}
+After the installation we need to download the FreeRTOS library files from the website of www.freertos.org. During this period we will be using the FreeRTOSv9.0.0 version for the library files.
+
+\subsection{Creating a new project}
+After installing all these softwares and downloading the FreeRTOS file,follow the following steps to create a new project.
+\begin{enumerate}
+	\item Open Keil uvision4 and select 'project' and then select new project.
+	\item Select the NXP option in the window and select lpc2148 processor.
+	\item Then go to file and select new and in the window that opens start coding.
+	\item But before compiling we need to include certain files and libraries.
+
+Follow the following steps to include those files.
+\begin{itemize}
+	\item Right click on the target folder that is created on the left hand side of the page.
+	\item Select the 'options for target' option and set the settings as per the following images.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=10cm,height=6cm]{Capture.PNG}
+		\caption{Create HEX}
+	\end{figure}
+\item Go to the c++ option on the same window. On that same page we will see a include paths option. Open that to include the files as shown in the image.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm,height=6cm]{c++.PNG}
+	\caption{C++ configurations}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm,height=6cm]{c++foldersetup.PNG}
+	\caption{C++ Folder Setup}
+\end{figure}
+\item After this go to the ASM page which is right next to the C++ page and again open the include paths page and include the following.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm,height=6cm]{asm.PNG}
+	\caption{Include paths}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm,height=6cm]{asmpath.PNG}
+	\caption{ASM Configurations}
+\end{figure}
+
+\item Go to the linker option and check the following settings.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm,height=6cm]{linker.PNG}
+	\caption{Include Files}
+\end{figure}
+Now lets begin including files to our project.
+\item Firstly double click on the cource folder that is generated below the target folder.If it contains the 'startup.s' file then delete it.Include the new startup.s. This file is located in \\"FreeRTOSv9.0.0/FreeRTOS/Demo/ARM7LPC2129KeilRVDS" this folder.
+\item Add the main.c file which contains our program.
+\item Add the "tasks.c", "list.c" and "queue.c" from the source folder which is inside the FreeRTOSv9.0.0 folder which we downloaded.
+\item Add the "FreeRTOS.h" and "freertosconfig.h" from include folder which is located inside the source folder.
+\item Now go inside the portable folder inside the source folder and go to RVDS folder and open the ARMLPC21xx folder and add the "port.c" and "portASM.s".
+\item And lastly inside the portable folder go to the "MemMang" folder and include the "heap2.c".
+\item You can include the "LCD.c" from the experiments folder of FireBird V LPC2148 folder.\\
+Your libraries should now consist of all these files.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm,height=10cm]{libraries.PNG}
+	\caption{LIBRARIES}
+\end{figure}
+
+\end{itemize}
+
+\end{enumerate}
 \section{Getting Started !}
 
 	\subsection{DataTypes}
@@ -542,6 +685,27 @@ xSemaphore = xSemaphoreCreateCounting( 5, 5 );
 	From the Output screenshots it can be observed how  data pushed 1st is popped out 1st (Queue mechanism).  
 	\end{itemize}
 	\includegraphics[width=12cm]{q}
+	
+	\newpage
+	
+	\section{Context Switching}
+	
+	\subsection{Intro}
+	Consider two process A and B. A is a process that is currently scheduled to run in the CPU as soon as it is allotted with CPU time. Once it is allotted with CPU time it will start executing. Suppose that B is process or thread that is at a higher priority than process A. Then the CPU time will be allotted to process B and process A will be pre-empted/suspended from the time span and CPU time will be given to process B. When process A is pre-empted/suspended then the flags and the register values are stored somewhere in the memory of that particular process. Once process B has finished execution then process will resume from the moment where it was pre-empted/suspended. This can be done because process A was able to store its values. This is called as context switching. 
+	
+	\subsection{Code}
+	
+	
+	%\item Use the following code to do Context %Switching.\vspace{2mm}
+	\lstinputlisting[language=C]{cswitch.c}
+	%\item\textbf{Code Explanation:}
+	
+	\newpage
+	
+	\subsection{Explanation}
+	\textbf{xTaskCreate:} Three tasks are created viz. Counter, motion and lcd printing. All these tasks have different priorities as seen in the program. Highest priority is given to the LCD task. It will be scheduled first and it will not give the CPU time until its finished.\\
+	Now, in the three tasks the vCounting task is just a counter, vmotion is a task that will always keep the robot moving in the forward motion and lastly the vlcdprint will print for a period of time and then it will be interrupted. While its execution its priority is reduced than other tasks. The priority changing is done by the function called as \textbf{vTaskPrioritySet}. In this function we give two parameters viz. the task handle and the priority. From the code we can see that the priority for task 3 is changed from 4 to 1. Hence, task 3 now has the lower priority so this task is now is pre-empted and motion task has the higher priority so it is executed first. After that this pre-empted task will resume from the point where the task was pre-empted. This will be clearly seen on the lcd.  
+	
 	\section{Application Based Experiments}
 	\subsection{State collection}
 	State collection involves storing data of sensors at each instance.The advantage of having the state of robot(i.e sensor values) is that it would help in debugging or simulating an already conducted experiment.
@@ -555,10 +719,12 @@ xSemaphore = xSemaphoreCreateCounting( 5, 5 );
 	\subsubsection{Python script}
 	\lstinputlisting[language=python]{serialcomm.py.}
 	
-	\subsection{Sample output}
+	\subsubsection{Sample output}
 	\includegraphics[width=14cm]{serialcomm}
 	
-	\newpage
+	
+\newpage
+
 	\section{References}
 	\begin{enumerate}
 	\item  http://www.rtos.be/2013/05/mutexes-and-semaphores-two-concepts-for-two-different-use-cases/

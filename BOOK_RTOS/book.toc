@@ -1,43 +1,51 @@
-\contentsline {section}{\numberline {1}Introduction to RTOS}{3}
-\contentsline {subsection}{\numberline {1.1}What is RTOS ?}{3}
-\contentsline {subsection}{\numberline {1.2}Types of tasks in RTOS}{3}
-\contentsline {section}{\numberline {2}What is FreeRTOS}{5}
-\contentsline {subsection}{\numberline {2.1}Advantage of FreeRTOS}{5}
-\contentsline {subsection}{\numberline {2.2}Drawbacks/Disadvantages (write some fancy word)}{5}
-\contentsline {section}{\numberline {3}Requirement}{6}
-\contentsline {section}{\numberline {4}Getting Started !}{6}
-\contentsline {subsection}{\numberline {4.1}DataTypes}{6}
-\contentsline {subsection}{\numberline {4.2}Variable Names}{6}
-\contentsline {subsection}{\numberline {4.3}Macros}{6}
-\contentsline {subsection}{\numberline {4.4}Creating Tasks}{6}
-\contentsline {subsection}{\numberline {4.5}Frequently used API's}{7}
-\contentsline {section}{\numberline {5}MultiTasking}{8}
-\contentsline {subsection}{\numberline {5.1}Code :}{8}
-\contentsline {subsection}{\numberline {5.2}Explanation}{12}
-\contentsline {section}{\numberline {6}Introduction to semaphore}{13}
-\contentsline {subsection}{\numberline {6.1}Binary Semaphores}{13}
-\contentsline {subsection}{\numberline {6.2}Mutex}{13}
-\contentsline {subsection}{\numberline {6.3}Counting Semaphore}{13}
-\contentsline {subsection}{\numberline {6.4}Mutex vs Binary Semaphore}{13}
-\contentsline {section}{\numberline {7}Binary Semaphore}{15}
-\contentsline {subsection}{\numberline {7.1}Code : }{15}
-\contentsline {subsection}{\numberline {7.2}Explanation}{17}
-\contentsline {section}{\numberline {8}Mutex}{18}
-\contentsline {subsection}{\numberline {8.1}Code : }{18}
-\contentsline {subsection}{\numberline {8.2}Explanation}{20}
-\contentsline {section}{\numberline {9}Counting Semaphore }{21}
-\contentsline {subsection}{\numberline {9.1}Code : }{21}
-\contentsline {subsection}{\numberline {9.2}Explanation}{24}
-\contentsline {section}{\numberline {10}Task Notification}{26}
-\contentsline {subsection}{\numberline {10.1}Code:}{27}
-\contentsline {subsection}{\numberline {10.2}Explanation}{30}
-\contentsline {section}{\numberline {11}Queue}{32}
-\contentsline {subsection}{\numberline {11.1}Intro}{32}
-\contentsline {subsection}{\numberline {11.2}Code}{32}
-\contentsline {subsection}{\numberline {11.3}Explanation}{34}
-\contentsline {section}{\numberline {12}Application Based Experiments}{37}
-\contentsline {subsection}{\numberline {12.1}State collection}{37}
-\contentsline {subsubsection}{\numberline {12.1.1}State collection Code}{37}
-\contentsline {subsubsection}{\numberline {12.1.2}Python script}{40}
-\contentsline {subsection}{\numberline {12.2}Sample output}{40}
-\contentsline {section}{\numberline {13}References}{41}
+\select@language {english}
+\contentsline {section}{\numberline {0.1}Introduction to RTOS}{5}{section.0.1}
+\contentsline {subsection}{\numberline {0.1.1}What is RTOS ?}{5}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Types of tasks in RTOS}{5}{subsection.0.1.2}
+\contentsline {section}{\numberline {0.2}What is FreeRTOS}{7}{section.0.2}
+\contentsline {subsection}{\numberline {0.2.1}Advantage of FreeRTOS}{7}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {0.2.2}Drawbacks/Disadvantages (write some fancy word)}{7}{subsection.0.2.2}
+\contentsline {section}{\numberline {0.3}Requirement}{8}{section.0.3}
+\contentsline {section}{\numberline {0.4}Setting up the environment}{8}{section.0.4}
+\contentsline {subsection}{\numberline {0.4.1}Installing the softwares}{8}{subsection.0.4.1}
+\contentsline {subsection}{\numberline {0.4.2}Creating a new project}{8}{subsection.0.4.2}
+\contentsline {section}{\numberline {0.5}Getting Started !}{12}{section.0.5}
+\contentsline {subsection}{\numberline {0.5.1}DataTypes}{12}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {0.5.2}Variable Names}{13}{subsection.0.5.2}
+\contentsline {subsection}{\numberline {0.5.3}Macros}{13}{subsection.0.5.3}
+\contentsline {subsection}{\numberline {0.5.4}Creating Tasks}{13}{subsection.0.5.4}
+\contentsline {subsection}{\numberline {0.5.5}Frequently used API's}{14}{subsection.0.5.5}
+\contentsline {section}{\numberline {0.6}MultiTasking}{15}{section.0.6}
+\contentsline {subsection}{\numberline {0.6.1}Code :}{15}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {0.6.2}Explanation}{19}{subsection.0.6.2}
+\contentsline {section}{\numberline {0.7}Introduction to semaphore}{20}{section.0.7}
+\contentsline {subsection}{\numberline {0.7.1}Binary Semaphores}{20}{subsection.0.7.1}
+\contentsline {subsection}{\numberline {0.7.2}Mutex}{20}{subsection.0.7.2}
+\contentsline {subsection}{\numberline {0.7.3}Counting Semaphore}{20}{subsection.0.7.3}
+\contentsline {subsection}{\numberline {0.7.4}Mutex vs Binary Semaphore}{20}{subsection.0.7.4}
+\contentsline {section}{\numberline {0.8}Binary Semaphore}{22}{section.0.8}
+\contentsline {subsection}{\numberline {0.8.1}Code : }{22}{subsection.0.8.1}
+\contentsline {subsection}{\numberline {0.8.2}Explanation}{24}{subsection.0.8.2}
+\contentsline {section}{\numberline {0.9}Mutex}{25}{section.0.9}
+\contentsline {subsection}{\numberline {0.9.1}Code : }{25}{subsection.0.9.1}
+\contentsline {subsection}{\numberline {0.9.2}Explanation}{27}{subsection.0.9.2}
+\contentsline {section}{\numberline {0.10}Counting Semaphore }{28}{section.0.10}
+\contentsline {subsection}{\numberline {0.10.1}Code : }{28}{subsection.0.10.1}
+\contentsline {subsection}{\numberline {0.10.2}Explanation}{31}{subsection.0.10.2}
+\contentsline {section}{\numberline {0.11}Task Notification}{33}{section.0.11}
+\contentsline {subsection}{\numberline {0.11.1}Code:}{34}{subsection.0.11.1}
+\contentsline {subsection}{\numberline {0.11.2}Explanation}{37}{subsection.0.11.2}
+\contentsline {section}{\numberline {0.12}Queue}{39}{section.0.12}
+\contentsline {subsection}{\numberline {0.12.1}Intro}{39}{subsection.0.12.1}
+\contentsline {subsection}{\numberline {0.12.2}Code}{39}{subsection.0.12.2}
+\contentsline {subsection}{\numberline {0.12.3}Explanation}{41}{subsection.0.12.3}
+\contentsline {section}{\numberline {0.13}Context Switching}{44}{section.0.13}
+\contentsline {subsection}{\numberline {0.13.1}Intro}{44}{subsection.0.13.1}
+\contentsline {subsection}{\numberline {0.13.2}Code}{44}{subsection.0.13.2}
+\contentsline {subsection}{\numberline {0.13.3}Explanation}{49}{subsection.0.13.3}
+\contentsline {section}{\numberline {0.14}Application Based Experiments}{49}{section.0.14}
+\contentsline {subsection}{\numberline {0.14.1}State collection}{49}{subsection.0.14.1}
+\contentsline {subsubsection}{State collection Code}{49}{subsection.0.14.1}
+\contentsline {subsubsection}{Python script}{52}{lstnumber.-22.95}
+\contentsline {subsubsection}{Sample output}{52}{lstnumber.-23.29}
+\contentsline {section}{\numberline {0.15}References}{53}{section.0.15}
