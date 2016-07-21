@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "adc.o" "lcd.o" "main.o" "motion_control.o" "pwm.o" "spi.o" --strict --scatter "GUI_Control_Serial.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\GUI_Control_Serial.map" -o "GUI_Control_Serial.axf"
