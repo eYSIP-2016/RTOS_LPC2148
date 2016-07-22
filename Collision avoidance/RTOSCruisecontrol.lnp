@@ -1,4 +1,0 @@
---cpu ARM7TDMI ".\startup.o" "tasks.o" "queue.o" "list.o" "port.o" ".\portasm.o" "heap_2.o" "main.o" "spi.o" "lcd.o" --strict --scatter "RTOSCruisecontrol.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\RTOSCruisecontrol.map" -o "RTOSCruisecontrol.axf"
