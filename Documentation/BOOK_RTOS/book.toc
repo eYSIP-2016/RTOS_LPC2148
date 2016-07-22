@@ -1,0 +1,55 @@
+\select@language {english}
+\contentsline {section}{\numberline {0.1}Introduction to RTOS}{5}{section.0.1}
+\contentsline {subsection}{\numberline {0.1.1}What is RTOS ?}{5}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Types of tasks in RTOS}{5}{subsection.0.1.2}
+\contentsline {section}{\numberline {0.2}What is FreeRTOS}{7}{section.0.2}
+\contentsline {subsection}{\numberline {0.2.1}Advantage of FreeRTOS}{7}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {0.2.2}Drawbacks/Disadvantages (write some fancy word)}{7}{subsection.0.2.2}
+\contentsline {section}{\numberline {0.3}Requirement}{8}{section.0.3}
+\contentsline {section}{\numberline {0.4}Setting up the environment}{8}{section.0.4}
+\contentsline {subsection}{\numberline {0.4.1}Installing the softwares}{8}{subsection.0.4.1}
+\contentsline {subsection}{\numberline {0.4.2}Creating a new project}{8}{subsection.0.4.2}
+\contentsline {section}{\numberline {0.5}Getting Started !}{12}{section.0.5}
+\contentsline {subsection}{\numberline {0.5.1}DataTypes}{12}{subsection.0.5.1}
+\contentsline {subsection}{\numberline {0.5.2}Variable Names}{13}{subsection.0.5.2}
+\contentsline {subsection}{\numberline {0.5.3}Macros}{13}{subsection.0.5.3}
+\contentsline {subsection}{\numberline {0.5.4}Creating Tasks}{13}{subsection.0.5.4}
+\contentsline {subsection}{\numberline {0.5.5}Frequently used API's}{14}{subsection.0.5.5}
+\contentsline {section}{\numberline {0.6}MultiTasking}{15}{section.0.6}
+\contentsline {subsection}{\numberline {0.6.1}Code :}{15}{subsection.0.6.1}
+\contentsline {subsection}{\numberline {0.6.2}Explanation}{19}{subsection.0.6.2}
+\contentsline {section}{\numberline {0.7}Introduction to semaphore}{20}{section.0.7}
+\contentsline {subsection}{\numberline {0.7.1}Binary Semaphores}{20}{subsection.0.7.1}
+\contentsline {subsection}{\numberline {0.7.2}Mutex}{20}{subsection.0.7.2}
+\contentsline {subsection}{\numberline {0.7.3}Counting Semaphore}{20}{subsection.0.7.3}
+\contentsline {subsection}{\numberline {0.7.4}Mutex vs Binary Semaphore}{20}{subsection.0.7.4}
+\contentsline {section}{\numberline {0.8}Binary Semaphore}{22}{section.0.8}
+\contentsline {subsection}{\numberline {0.8.1}Code : }{22}{subsection.0.8.1}
+\contentsline {subsection}{\numberline {0.8.2}Explanation}{24}{subsection.0.8.2}
+\contentsline {section}{\numberline {0.9}Mutex}{25}{section.0.9}
+\contentsline {subsection}{\numberline {0.9.1}Code : }{25}{subsection.0.9.1}
+\contentsline {subsection}{\numberline {0.9.2}Explanation}{27}{subsection.0.9.2}
+\contentsline {section}{\numberline {0.10}Counting Semaphore }{28}{section.0.10}
+\contentsline {subsection}{\numberline {0.10.1}Code : }{28}{subsection.0.10.1}
+\contentsline {subsection}{\numberline {0.10.2}Explanation}{31}{subsection.0.10.2}
+\contentsline {section}{\numberline {0.11}Task Notification}{33}{section.0.11}
+\contentsline {subsection}{\numberline {0.11.1}Code:}{34}{subsection.0.11.1}
+\contentsline {subsection}{\numberline {0.11.2}Explanation}{37}{subsection.0.11.2}
+\contentsline {section}{\numberline {0.12}Queue}{39}{section.0.12}
+\contentsline {subsection}{\numberline {0.12.1}Intro}{39}{subsection.0.12.1}
+\contentsline {subsection}{\numberline {0.12.2}Code}{39}{subsection.0.12.2}
+\contentsline {subsection}{\numberline {0.12.3}Explanation}{41}{subsection.0.12.3}
+\contentsline {section}{\numberline {0.13}Context Switching}{44}{section.0.13}
+\contentsline {subsection}{\numberline {0.13.1}Intro}{44}{subsection.0.13.1}
+\contentsline {subsection}{\numberline {0.13.2}Code}{44}{subsection.0.13.2}
+\contentsline {subsection}{\numberline {0.13.3}Explanation}{49}{subsection.0.13.3}
+\contentsline {section}{\numberline {0.14}Application Based Experiments}{49}{section.0.14}
+\contentsline {subsection}{\numberline {0.14.1}State collection}{49}{subsection.0.14.1}
+\contentsline {subsubsection}{State collection Code}{49}{subsection.0.14.1}
+\contentsline {subsubsection}{Python script}{52}{lstnumber.-22.95}
+\contentsline {subsubsection}{Sample output}{52}{lstnumber.-23.29}
+\contentsline {subsection}{\numberline {0.14.2}Collision Avoidance}{53}{subsection.0.14.2}
+\contentsline {subsubsection}{Theory and Description}{53}{subsection.0.14.2}
+\contentsline {subsubsection}{Experiment: Using RTOS}{55}{figure.0.9}
+\contentsline {subsubsection}{Experiment: Using C}{67}{lstnumber.-24.541}
+\contentsline {section}{\numberline {0.15}References}{79}{section.0.15}
