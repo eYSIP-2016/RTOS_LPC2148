@@ -1,4 +1,0 @@
---cpu ARM7TDMI "main.o" "list.o" "queue.o" "tasks.o" "heap_2.o" "port.o" ".\portasm.o" "spi.o" "pwm.o" "motion_control.o" "lcd.o" "startup.o" "adc.o" --strict --scatter "state_collector.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\state_collector.map" -o "state_collector.axf"

@@ -1,4 +1,0 @@
---cpu ARM7TDMI "startup.o" "main.o" "spi.o" "lcd.o" --strict --scatter "SP1.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\SP1.map" -o "SP1.axf"
