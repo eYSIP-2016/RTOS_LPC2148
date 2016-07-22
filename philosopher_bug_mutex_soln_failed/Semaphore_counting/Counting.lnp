@@ -1,4 +1,0 @@
---cpu ARM7TDMI "main.o" "startup.o" "tasks.o" "list.o" "queue.o" "port.o" ".\portasm.o" "lcd.o" "heap_2.o" --strict --scatter "Counting.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\Counting.map" -o "Counting.axf"
