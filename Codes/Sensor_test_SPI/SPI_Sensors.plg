@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\G50\Desktop\PROJECT\Sensor_test_SPI\SPI_Sensors.uvproj
+Project File Date:  07/12/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(672): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=6196 RO-data=32 RW-data=8 ZI-data=1288  
+FromELF: creating hex file...
+"SPI_Sensors.axf" - 0 Error(s), 1 Warning(s).
