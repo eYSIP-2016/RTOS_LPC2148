@@ -1,0 +1,4 @@
+--cpu ARM7TDMI ".\startup.o" "tasks.o" "queue.o" "list.o" "heap_2.o" "port.o" ".\portasm.o" "contextswitching.o" "lcd.o" --strict --scatter "ContextSwitching.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ContextSwitching.map" -o "ContextSwitching.axf"
