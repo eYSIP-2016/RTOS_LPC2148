@@ -20,7 +20,7 @@ CODES folder consist of all the sample programs that have been executed on LPC21
  * SPI1 and SPI_ADC :Codes to obtain data from slaves 
  
 * Documentation folder consist of 
-    *A starters guide for FreeRTOS on LPC2148 which contain
+    * A starters guide for FreeRTOS on LPC2148 which contain
         * Brief Introduction to basic concepts of RTOS
         * Sample codes Illustrating Basic Concepts
         * Explanantion of Codes implemented using FreeRTOS
